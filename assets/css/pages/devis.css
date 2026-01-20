@@ -25,3 +25,37 @@
   font-size: 13px;
   color: #475569;
 }
+
+.progress {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 12px 0 18px;
+}
+
+.progress-step {
+  flex: 1;
+  height: 6px;
+  border-radius: 999px;
+  background: rgba(91, 115, 240, 0.2);
+  position: relative;
+}
+
+.progress-step.active::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 999px;
+  background: var(--gradient);
+}
+
+.sms-box {
+  margin-top: 16px;
+  background: white;
+  border: 1px solid var(--ice);
+  border-radius: 16px;
+  padding: 16px;
+  box-shadow: var(--shadow);
+  font-size: 14px;
+  color: #475569;
+}

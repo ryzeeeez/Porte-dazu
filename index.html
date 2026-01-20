@@ -49,6 +49,7 @@
   </header>
 
   <section class="hero section">
+    <div class="hero-pattern"></div>
     <div class="container hero-grid">
       <div data-animate>
         <span class="badge">Étudiants disponibles • matériel fourni</span>
@@ -63,7 +64,7 @@
           <a class="btn btn-ghost" href="sms:+33675424908?&body=Bonjour%2C%20je%20souhaite%20un%20devis%20pour%20%5Bservice%5D%20%C3%A0%20%5Bville%5D." data-cta="SMS hero">Envoyer un SMS</a>
         </div>
         <div class="inline-links">
-          <a class="btn btn-secondary" href="realisations.html" data-cta="Voir realisations">Voir nos réalisations</a>
+          <a class="btn btn-outline" href="realisations.html" data-cta="Voir realisations">Voir nos réalisations</a>
           <a class="btn btn-ghost" href="devis.html" data-cta="Estimer mon besoin">Estimer mon besoin</a>
         </div>
         <div style="margin-top: 20px; display: flex; gap: 10px; flex-wrap: wrap;">
@@ -101,29 +102,76 @@
     </div>
   </section>
 
+  <section class="section">
+    <div class="container" data-animate>
+      <div class="quick-summary">
+        <h2 style="margin-top: 0;">En 10 secondes : ce qu’on fait</h2>
+        <p style="color: #475569; max-width: 720px;">
+          Nettoyage & jardinage pour particuliers et petits pros : voiture, terrasse, canapé & tissus, jardin.
+          Résultat visible, respect des lieux, matériel fourni, devis rapide.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="devis.html" data-cta="Devis rapide resume">Demander un devis</a>
+          <a class="btn btn-outline" href="services.html" data-cta="Voir services resume">Voir nos services</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section class="section" id="services">
     <div class="container" data-animate>
       <h2 class="section-title">Services en un coup d'œil</h2>
       <p class="section-subtitle">Nettoyage en profondeur : poussières, taches, mousse, salissures incrustées, résidus, fientes d'oiseaux / salissures d'animaux. Nous disposons de tout le matériel nécessaire.</p>
       <div class="grid grid-4 services-grid" style="margin-top: 28px;">
         <div class="card">
+          <div class="service-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+              <path d="M4 13h14l2 3H4v-3Z" stroke="#23318E" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M6 13l1.5-3h7L16 13" stroke="#23318E" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="8" cy="18" r="1.6" stroke="#5B73F0" stroke-width="1.6"/>
+              <circle cx="16" cy="18" r="1.6" stroke="#5B73F0" stroke-width="1.6"/>
+            </svg>
+          </div>
           <h3>Nettoyage voiture</h3>
           <p>Intérieur et extérieur pour retrouver une voiture fraîche, propre et valorisée.</p>
+          <p class="benefit">Résultat visible dès la première intervention.</p>
           <a class="btn btn-ghost" href="services.html#voiture">En savoir plus →</a>
         </div>
         <div class="card">
+          <div class="service-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+              <path d="M3 20h18M5 20l2-9h10l2 9" stroke="#23318E" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M7 11l2-4h6l2 4" stroke="#5B73F0" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
           <h3>Nettoyage terrasse</h3>
           <p>Dalles, murs et mobilier extérieur nettoyés en profondeur et en douceur.</p>
+          <p class="benefit">Surfaces plus sûres et plus nettes.</p>
           <a class="btn btn-ghost" href="services.html#terrasse">En savoir plus →</a>
         </div>
         <div class="card">
+          <div class="service-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+              <rect x="4" y="7" width="16" height="8" rx="3" stroke="#23318E" stroke-width="1.6"/>
+              <path d="M6 15v3M18 15v3" stroke="#5B73F0" stroke-width="1.6" stroke-linecap="round"/>
+            </svg>
+          </div>
           <h3>Nettoyage canapé & tissus</h3>
           <p>Détachage, traitement des odeurs et rafraîchissement des textiles.</p>
+          <p class="benefit">Textiles ravivés, odeurs réduites.</p>
           <a class="btn btn-ghost" href="services.html#canape">En savoir plus →</a>
         </div>
         <div class="card">
+          <div class="service-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+              <path d="M12 4v6" stroke="#23318E" stroke-width="1.6" stroke-linecap="round"/>
+              <path d="M7 11c2 0 3-2 5-2s3 2 5 2" stroke="#5B73F0" stroke-width="1.6" stroke-linecap="round"/>
+              <path d="M6 20c3-6 9-6 12 0" stroke="#23318E" stroke-width="1.6" stroke-linecap="round"/>
+            </svg>
+          </div>
           <h3>Jardinage</h3>
           <p>Tonte, taille, désherbage : un extérieur propre et entretenu toute l'année.</p>
+          <p class="benefit">Un jardin net sans effort pour vous.</p>
           <a class="btn btn-ghost" href="services.html#jardin">En savoir plus →</a>
         </div>
       </div>
@@ -134,12 +182,27 @@
     <div class="container" data-animate>
       <h2 class="section-title">Pourquoi nous choisir ?</h2>
       <p class="section-subtitle">Un service fiable, professionnel et chaleureux.</p>
-      <div class="grid grid-5" style="margin-top: 24px;">
-        <div class="card">Ponctualité et respect des horaires.</div>
-        <div class="card">Matériel fourni et adapté.</div>
-        <div class="card">Résultats visibles et durables.</div>
-        <div class="card">Respect total des lieux.</div>
-        <div class="card">Équipe flexible, réponse rapide.</div>
+      <div class="grid grid-5 why-grid" style="margin-top: 24px;">
+        <div class="card">
+          <div class="service-icon">✓</div>
+          Ponctualité et respect des horaires.
+        </div>
+        <div class="card">
+          <div class="service-icon">★</div>
+          Matériel fourni et adapté.
+        </div>
+        <div class="card">
+          <div class="service-icon">✔</div>
+          Résultats visibles et durables.
+        </div>
+        <div class="card">
+          <div class="service-icon">◎</div>
+          Respect total des lieux.
+        </div>
+        <div class="card">
+          <div class="service-icon">↗</div>
+          Équipe flexible, réponse rapide.
+        </div>
       </div>
     </div>
   </section>
@@ -174,10 +237,28 @@
     <div class="container" data-animate>
       <h2 class="section-title">Comment ça marche</h2>
       <p class="section-subtitle">Simple, rapide, efficace.</p>
-      <div class="grid grid-3" style="margin-top: 28px;">
-        <div class="card"><strong>1. Contact rapide</strong><p>Appel, SMS ou formulaire. Nous confirmons votre besoin et votre secteur.</p></div>
-        <div class="card"><strong>2. Intervention soignée</strong><p>Nous arrivons équipés, respectons vos espaces et travaillons proprement.</p></div>
-        <div class="card"><strong>3. Résultat visible</strong><p>Vous validez le résultat et recevez des conseils pour entretenir.</p></div>
+      <div class="stepper">
+        <div class="step-card">
+          <div class="step-number">1</div>
+          <div>
+            <strong>Contact rapide</strong>
+            <p>Appel, SMS ou formulaire. Nous confirmons votre besoin et votre secteur.</p>
+          </div>
+        </div>
+        <div class="step-card">
+          <div class="step-number">2</div>
+          <div>
+            <strong>Intervention soignée</strong>
+            <p>Nous arrivons équipés, respectons vos espaces et travaillons proprement.</p>
+          </div>
+        </div>
+        <div class="step-card">
+          <div class="step-number">3</div>
+          <div>
+            <strong>Résultat visible</strong>
+            <p>Vous validez le résultat et recevez des conseils pour entretenir.</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -195,7 +276,7 @@
         <div class="card"><div class="placeholder">Avant / Après 6</div></div>
       </div>
       <div class="hero-actions" style="margin-top: 24px;">
-        <a class="btn btn-secondary" href="realisations.html" data-cta="Realisations home">Voir toutes les réalisations</a>
+        <a class="btn btn-outline" href="realisations.html" data-cta="Realisations home">Voir toutes les réalisations</a>
       </div>
     </div>
   </section>
@@ -257,12 +338,12 @@
   </footer>
 
   <div class="floating-cta">
-    <a class="btn btn-primary" href="tel:+33675424908" data-cta="Floating Appel">Appeler</a>
-    <a class="btn btn-secondary" href="sms:+33675424908" data-cta="Floating SMS">SMS</a>
+    <a class="btn btn-primary btn-icon" href="tel:+33675424908" data-cta="Floating Appel"><span aria-hidden="true">📞</span>Appeler</a>
+    <a class="btn btn-secondary btn-icon" href="sms:+33675424908" data-cta="Floating SMS"><span aria-hidden="true">💬</span>SMS</a>
   </div>
   <div class="sticky-mobile">
-    <a class="btn btn-primary" href="tel:+33675424908" data-cta="Sticky Appel">Appeler</a>
-    <a class="btn btn-secondary" href="sms:+33675424908" data-cta="Sticky SMS">SMS</a>
+    <a class="btn btn-primary btn-icon" href="tel:+33675424908" data-cta="Sticky Appel"><span aria-hidden="true">📞</span>Appeler</a>
+    <a class="btn btn-secondary btn-icon" href="sms:+33675424908" data-cta="Sticky SMS"><span aria-hidden="true">💬</span>SMS</a>
   </div>
 
   <script src="assets/js/main.js"></script>
