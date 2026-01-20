@@ -1,0 +1,26 @@
+.hero-card {
+  background: white;
+  border-radius: var(--radius-lg);
+  padding: 28px;
+  border: 1px solid var(--ice);
+  box-shadow: var(--shadow);
+}
+.reason-list .card { text-align: left; font-weight: 600; }
+.before-after { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); }
+.placeholder {
+  height: 140px;
+  border-radius: 16px;
+  background: var(--ice);
+  display: grid;
+  place-items: center;
+  font-size: 13px;
+  color: var(--night);
+  font-weight: 600;
+}
+.cta-block {
+  background: var(--night);
+  color: white;
+  text-align: center;
+  border-radius: var(--radius-lg);
+  padding: 48px 24px;
+}

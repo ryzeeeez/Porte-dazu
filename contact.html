@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact | LES PORTES D'AZUR</title>
+  <meta name="description" content="Contactez LES PORTES D'AZUR pour un devis rapide. Appel, SMS ou formulaire." />
+  <meta property="og:title" content="Contact | LES PORTES D'AZUR" />
+  <meta property="og:description" content="Appelez ou envoyez un SMS pour un devis rapide." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/img/og-placeholder.svg" />
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="assets/css/pages/contact.css" />
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a class="logo" href="index.html">
+        <div class="logo-mark">LP</div>
+        <div>
+          <div style="font-weight: 700; color: var(--night);">LES PORTES D'AZUR</div>
+          <div style="font-size: 12px; color: #64748B;">Nettoyage • Jardinage</div>
+        </div>
+      </a>
+      <nav class="nav-links">
+        <a href="index.html">Accueil</a>
+        <a href="services.html">Services</a>
+        <a href="realisations.html">Réalisations</a>
+        <a href="devis.html">Devis</a>
+        <a href="contact.html">Contact</a>
+        <a href="faq.html">FAQ</a>
+      </nav>
+      <div class="nav-actions">
+        <a class="btn btn-secondary" href="tel:+33675424908" onclick="trackCTA('Appel header')">06 75 42 49 08</a>
+        <a class="btn btn-primary" href="devis.html" onclick="trackCTA('Devis header')">Demander un devis</a>
+        <button class="mobile-toggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+      </div>
+    </div>
+    <div class="mobile-menu">
+      <a href="index.html">Accueil</a>
+      <a href="services.html">Services</a>
+      <a href="realisations.html">Réalisations</a>
+      <a href="devis.html">Devis</a>
+      <a href="contact.html">Contact</a>
+      <a href="faq.html">FAQ</a>
+    </div>
+  </header>
+
+  <section class="section hero">
+    <div class="container hero-grid">
+      <div class="fade-up">
+        <span class="badge">Réponse rapide</span>
+        <h1>Contact</h1>
+        <p style="font-size: 18px; color: #475569;">Besoin d'un devis ou d'une information ? Nous répondons rapidement.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="tel:+33675424908" onclick="trackCTA('Appel contact')">Appeler 06 75 42 49 08</a>
+          <a class="btn btn-secondary" href="sms:+33675424908?&body=Bonjour%2C%20je%20souhaite%20un%20devis%20pour%20%5Bservice%5D%20%C3%A0%20%5Bville%5D." onclick="trackCTA('SMS contact')">Envoyer un SMS</a>
+        </div>
+      </div>
+      <div class="card fade-up">
+        <h3 style="margin-top:0;">Horaires</h3>
+        <p>Lundi - Samedi : 8h00 - 19h00 (à confirmer).</p>
+        <p>Dimanche : sur demande.</p>
+        <h3 style="margin-top: 20px;">Délai de réponse</h3>
+        <p>En général sous 24h ouvrées par téléphone ou SMS.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container contact-grid">
+      <form id="contact-form" class="contact-card fade-up">
+        <h2>Formulaire rapide</h2>
+        <div class="grid" style="gap: 14px;">
+          <div>
+            <label for="contact-name">Nom *</label>
+            <input id="contact-name" required placeholder="Votre nom" />
+          </div>
+          <div>
+            <label for="contact-phone">Téléphone *</label>
+            <input id="contact-phone" required placeholder="06 00 00 00 00" />
+          </div>
+          <div>
+            <label for="contact-message">Message *</label>
+            <textarea id="contact-message" rows="4" required placeholder="Expliquez votre besoin"></textarea>
+          </div>
+          <button class="btn btn-primary" type="submit">Envoyer</button>
+          <div class="confirmation" id="contact-confirm">Merci ! Votre message a bien été envoyé.</div>
+          <p style="font-size: 12px; color: #94A3B8;">Nous vous répondrons rapidement par téléphone ou SMS.</p>
+        </div>
+      </form>
+      <div class="contact-card fade-up">
+        <h3>Coordonnées</h3>
+        <p><strong>Téléphone :</strong> 06 75 42 49 08</p>
+        <p><strong>SMS :</strong> disponible</p>
+        <p><strong>Zone :</strong> autour de votre secteur, dites-nous votre ville.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="tel:+33675424908" onclick="trackCTA('Appel contact card')">Appeler</a>
+          <a class="btn btn-secondary" href="sms:+33675424908?&body=Bonjour%2C%20je%20souhaite%20un%20devis%20pour%20%5Bservice%5D%20%C3%A0%20%5Bville%5D." onclick="trackCTA('SMS contact card')">Envoyer un SMS</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <strong>LES PORTES D'AZUR</strong>
+        <p>Nettoyage • Jardinage</p>
+        <p>Entreprise locale, équipe flexible, matériel fourni, interventions soignées.</p>
+        <p><a href="tel:+33675424908">06 75 42 49 08</a></p>
+        <p><a href="sms:+33675424908?&body=Bonjour%2C%20je%20souhaite%20un%20devis%20pour%20%5Bservice%5D%20%C3%A0%20%5Bville%5D.">Envoyer un SMS</a></p>
+      </div>
+      <div>
+        <strong>Navigation</strong>
+        <p><a href="index.html">Accueil</a></p>
+        <p><a href="services.html">Services</a></p>
+        <p><a href="realisations.html">Réalisations</a></p>
+        <p><a href="devis.html">Devis</a></p>
+        <p><a href="contact.html">Contact</a></p>
+      </div>
+      <div>
+        <strong>Ressources</strong>
+        <p><a href="faq.html">FAQ</a></p>
+        <p><a href="services.html">Nos services</a></p>
+        <p><a href="realisations.html">Avant / Après</a></p>
+      </div>
+      <div>
+        <strong>Légal</strong>
+        <p><a href="mentions-legales.html">Mentions légales</a></p>
+        <p><a href="politique-confidentialite.html">Politique de confidentialité</a></p>
+        <p class="legal">Aucune adresse précise n'est publiée. Nous intervenons autour de votre secteur.</p>
+      </div>
+    </div>
+    <div class="legal" style="text-align: center;">© 2024 LES PORTES D'AZUR. Tous droits réservés.</div>
+  </footer>
+
+  <div class="floating-cta">
+    <a class="btn btn-primary" href="tel:+33675424908" onclick="trackCTA('Floating Appel')">Appeler</a>
+    <a class="btn btn-secondary" href="sms:+33675424908?&body=Bonjour%2C%20je%20souhaite%20un%20devis%20pour%20%5Bservice%5D%20%C3%A0%20%5Bville%5D." onclick="trackCTA('Floating SMS')">SMS</a>
+  </div>
+  <div class="sticky-mobile">
+    <a class="btn btn-primary" href="tel:+33675424908" onclick="trackCTA('Sticky Appel')">Appeler</a>
+    <a class="btn btn-secondary" href="sms:+33675424908?&body=Bonjour%2C%20je%20souhaite%20un%20devis%20pour%20%5Bservice%5D%20%C3%A0%20%5Bville%5D." onclick="trackCTA('Sticky SMS')">SMS</a>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/animations.js"></script>
+  <script src="assets/js/forms.js"></script>
+</body>
+</html>
