@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Réalisations | LES PORTES D'AZUR</title>
+  <meta name="description" content="Galerie avant/après : voiture, terrasse, canapé, jardin. Envoyez vos photos par SMS." />
+  <meta property="og:title" content="Réalisations | LES PORTES D'AZUR" />
+  <meta property="og:description" content="Avant/après en nettoyage et jardinage." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/img/og-placeholder.svg" />
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="assets/css/pages/realisations.css" />
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a class="logo" href="index.html">
+        <div class="logo-mark">LP</div>
+        <div>
+          <div style="font-weight: 700; color: var(--night);">LES PORTES D'AZUR</div>
+          <div style="font-size: 12px; color: #64748B;">Nettoyage • Jardinage</div>
+        </div>
+      </a>
+      <nav class="nav-links">
+        <a href="index.html">Accueil</a>
+        <a href="services.html">Services</a>
+        <a href="realisations.html">Réalisations</a>
+        <a href="devis.html">Devis</a>
+        <a href="contact.html">Contact</a>
+        <a href="faq.html">FAQ</a>
+      </nav>
+      <div class="nav-actions">
+        <a class="btn btn-secondary" href="tel:+33675424908" onclick="trackCTA('Appel header')">06 75 42 49 08</a>
+        <a class="btn btn-primary" href="devis.html" onclick="trackCTA('Devis header')">Demander un devis</a>
+        <button class="mobile-toggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+      </div>
+    </div>
+    <div class="mobile-menu">
+      <a href="index.html">Accueil</a>
+      <a href="services.html">Services</a>
+      <a href="realisations.html">Réalisations</a>
+      <a href="devis.html">Devis</a>
+      <a href="contact.html">Contact</a>
+      <a href="faq.html">FAQ</a>
+    </div>
+  </header>
+
+  <section class="section hero">
+    <div class="container hero-grid">
+      <div class="fade-up">
+        <span class="badge">Avant / Après</span>
+        <h1>Nos réalisations</h1>
+        <p style="font-size: 18px; color: #475569;">Découvrez nos résultats en nettoyage voiture, terrasse, canapé et jardinage. Placeholders visuels en attendant vos photos.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="sms:+33675424908?&body=Bonjour%2C%20je%20vous%20envoie%20des%20photos%20avant%2Fapr%C3%A8s%20pour%20un%20devis." onclick="trackCTA('SMS photos')">Envoyer vos photos par SMS</a>
+          <a class="btn btn-secondary" href="devis.html" onclick="trackCTA('Devis realisations')">Demander un devis</a>
+        </div>
+      </div>
+      <div class="card fade-up">
+        <h3 style="margin-top:0;">Nos engagements</h3>
+        <ul class="list">
+          <li>Ponctualité et respect des lieux.</li>
+          <li>Produits adaptés aux surfaces.</li>
+          <li>Résultats visibles et conseils d'entretien.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title fade-up">Galerie filtrable</h2>
+      <div class="filter-bar" style="margin-top: 16px;">
+        <button class="btn btn-primary" data-filter="all">Tout</button>
+        <button class="btn btn-secondary" data-filter="voiture">Voiture</button>
+        <button class="btn btn-secondary" data-filter="terrasse">Terrasse</button>
+        <button class="btn btn-secondary" data-filter="canape">Canapé</button>
+        <button class="btn btn-secondary" data-filter="jardin">Jardin</button>
+      </div>
+      <div class="gallery">
+        <div class="card gallery-card fade-up" data-category="voiture">
+          <span class="tag">Voiture</span>
+          <div class="placeholder">Avant / Après 1</div>
+        </div>
+        <div class="card gallery-card fade-up" data-category="terrasse">
+          <span class="tag">Terrasse</span>
+          <div class="placeholder">Avant / Après 2</div>
+        </div>
+        <div class="card gallery-card fade-up" data-category="canape">
+          <span class="tag">Canapé</span>
+          <div class="placeholder">Avant / Après 3</div>
+        </div>
+        <div class="card gallery-card fade-up" data-category="jardin">
+          <span class="tag">Jardin</span>
+          <div class="placeholder">Avant / Après 4</div>
+        </div>
+        <div class="card gallery-card fade-up" data-category="voiture">
+          <span class="tag">Voiture</span>
+          <div class="placeholder">Avant / Après 5</div>
+        </div>
+        <div class="card gallery-card fade-up" data-category="terrasse">
+          <span class="tag">Terrasse</span>
+          <div class="placeholder">Avant / Après 6</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <strong>LES PORTES D'AZUR</strong>
+        <p>Nettoyage • Jardinage</p>
+        <p>Entreprise locale, équipe flexible, matériel fourni, interventions soignées.</p>
+        <p><a href="tel:+33675424908">06 75 42 49 08</a></p>
+        <p><a href="sms:+33675424908?&body=Bonjour%2C%20je%20souhaite%20un%20devis%20pour%20%5Bservice%5D%20%C3%A0%20%5Bville%5D.">Envoyer un SMS</a></p>
+      </div>
+      <div>
+        <strong>Navigation</strong>
+        <p><a href="index.html">Accueil</a></p>
+        <p><a href="services.html">Services</a></p>
+        <p><a href="realisations.html">Réalisations</a></p>
+        <p><a href="devis.html">Devis</a></p>
+        <p><a href="contact.html">Contact</a></p>
+      </div>
+      <div>
+        <strong>Ressources</strong>
+        <p><a href="faq.html">FAQ</a></p>
+        <p><a href="services.html">Nos services</a></p>
+        <p><a href="realisations.html">Avant / Après</a></p>
+      </div>
+      <div>
+        <strong>Légal</strong>
+        <p><a href="mentions-legales.html">Mentions légales</a></p>
+        <p><a href="politique-confidentialite.html">Politique de confidentialité</a></p>
+        <p class="legal">Aucune adresse précise n'est publiée. Nous intervenons autour de votre secteur.</p>
+      </div>
+    </div>
+    <div class="legal" style="text-align: center;">© 2024 LES PORTES D'AZUR. Tous droits réservés.</div>
+  </footer>
+
+  <div class="floating-cta">
+    <a class="btn btn-primary" href="tel:+33675424908" onclick="trackCTA('Floating Appel')">Appeler</a>
+    <a class="btn btn-secondary" href="sms:+33675424908?&body=Bonjour%2C%20je%20souhaite%20un%20devis%20pour%20%5Bservice%5D%20%C3%A0%20%5Bville%5D." onclick="trackCTA('Floating SMS')">SMS</a>
+  </div>
+  <div class="sticky-mobile">
+    <a class="btn btn-primary" href="tel:+33675424908" onclick="trackCTA('Sticky Appel')">Appeler</a>
+    <a class="btn btn-secondary" href="sms:+33675424908?&body=Bonjour%2C%20je%20souhaite%20un%20devis%20pour%20%5Bservice%5D%20%C3%A0%20%5Bville%5D." onclick="trackCTA('Sticky SMS')">SMS</a>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/animations.js"></script>
+  <script src="assets/js/gallery.js"></script>
+</body>
+</html>

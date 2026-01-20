@@ -4,291 +4,20 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>LES PORTES D'AZUR | Nettoyage & Jardinage</title>
-  <meta name="description" content="Entreprise locale de nettoyage et jardinage. Devis gratuit, matériel fourni, équipe ponctuelle. Appel/SMS immédiat pour un devis." />
+  <meta name="description" content="Entreprise locale de nettoyage et jardinage. Devis gratuit, matériel fourni, équipe ponctuelle. Appel/SMS immédiat." />
   <meta property="og:title" content="LES PORTES D'AZUR | Nettoyage & Jardinage" />
   <meta property="og:description" content="Nettoyage voiture, terrasse, canapé & tissus, jardinage. Devis gratuit et réponse rapide." />
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="fr_FR" />
-  <meta property="og:image" content="og-placeholder.svg" />
-  <style>
-    :root {
-      --night: #23318E;
-      --azure: #5B73F0;
-      --ice: #E9EEFF;
-      --fog: #F6F7FB;
-      --ink: #0F172A;
-      --radius: 20px;
-      --shadow: 0 18px 50px rgba(15, 23, 42, 0.08);
-    }
-
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body {
-      margin: 0;
-      font-family: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
-      color: var(--ink);
-      background: var(--fog);
-      line-height: 1.6;
-    }
-
-    img { max-width: 100%; height: auto; }
-    a { color: inherit; text-decoration: none; }
-
-    .container {
-      width: min(1180px, 92%);
-      margin: 0 auto;
-    }
-
-    .section { padding: 80px 0; }
-    .section-title { font-size: clamp(28px, 3vw, 40px); font-weight: 700; color: var(--night); }
-    .section-subtitle { margin-top: 12px; font-size: 18px; color: #475569; }
-
-    .card {
-      background: white;
-      border-radius: var(--radius);
-      padding: 24px;
-      box-shadow: var(--shadow);
-      border: 1px solid var(--ice);
-    }
-
-    .badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 6px 14px;
-      border-radius: 999px;
-      font-size: 14px;
-      font-weight: 600;
-      background: var(--ice);
-      color: var(--night);
-    }
-
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
-      padding: 12px 22px;
-      border-radius: 999px;
-      font-weight: 600;
-      border: none;
-      cursor: pointer;
-      transition: transform 0.15s ease, background 0.2s ease, color 0.2s ease;
-    }
-
-    .btn:focus-visible {
-      outline: 3px solid rgba(91, 115, 240, 0.5);
-      outline-offset: 2px;
-    }
-
-    .btn-primary { background: var(--night); color: white; }
-    .btn-primary:hover { background: var(--azure); transform: translateY(-1px); }
-    .btn-secondary { background: white; color: var(--night); border: 1px solid var(--night); }
-    .btn-secondary:hover { background: var(--ice); }
-    .btn-ghost { background: transparent; color: var(--night); }
-    .btn-ghost:hover { color: var(--azure); }
-
-    .grid { display: grid; gap: 24px; }
-    .grid-2 { grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
-    .grid-3 { grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
-    .grid-4 { grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); }
-    .grid-5 { grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); }
-
-    header {
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      background: rgba(255, 255, 255, 0.9);
-      backdrop-filter: blur(10px);
-      border-bottom: 1px solid var(--ice);
-    }
-
-    .nav {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 18px 0;
-    }
-
-    .nav-links {
-      display: flex;
-      align-items: center;
-      gap: 18px;
-      font-size: 14px;
-      color: #475569;
-    }
-
-    .nav-links a:hover { color: var(--night); }
-
-    .logo {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
-
-    .logo-mark {
-      width: 42px;
-      height: 42px;
-      border-radius: 16px;
-      background: var(--night);
-      color: white;
-      font-weight: 700;
-      display: grid;
-      place-items: center;
-    }
-
-    .hero {
-      background: white;
-      border-bottom: 1px solid var(--ice);
-    }
-
-    .hero-grid {
-      display: grid;
-      gap: 40px;
-      align-items: center;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    }
-
-    .hero h1 {
-      font-size: clamp(36px, 4vw, 52px);
-      color: var(--night);
-    }
-
-    .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 20px; }
-
-    .inline-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 16px; }
-
-    .floating-cta {
-      position: fixed;
-      right: 16px;
-      bottom: 110px;
-      z-index: 90;
-      display: none;
-      flex-direction: column;
-      gap: 10px;
-    }
-
-    .sticky-mobile {
-      position: fixed;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      z-index: 80;
-      background: white;
-      border-top: 1px solid var(--ice);
-      display: none;
-      gap: 10px;
-      padding: 12px 16px;
-    }
-
-    .sticky-mobile .btn { flex: 1; }
-
-    .service-list ul,
-    .list {
-      padding-left: 20px;
-      margin: 12px 0 0;
-      color: #475569;
-      font-size: 14px;
-    }
-
-    .before-after {
-      display: grid;
-      gap: 16px;
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    }
-
-    .placeholder {
-      height: 140px;
-      border-radius: 16px;
-      background: var(--ice);
-      display: grid;
-      place-items: center;
-      font-size: 13px;
-      color: var(--night);
-      font-weight: 600;
-    }
-
-    .faq-item {
-      border-radius: 16px;
-      border: 1px solid var(--ice);
-      background: white;
-      overflow: hidden;
-    }
-
-    .faq-question {
-      width: 100%;
-      text-align: left;
-      background: none;
-      border: none;
-      padding: 16px 18px;
-      font-weight: 600;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      cursor: pointer;
-    }
-
-    .faq-answer {
-      display: none;
-      padding: 0 18px 16px;
-      color: #475569;
-      font-size: 14px;
-    }
-
-    .faq-item.active .faq-answer { display: block; }
-
-    .cta-block {
-      background: var(--night);
-      color: white;
-      text-align: center;
-      border-radius: var(--radius);
-      padding: 48px 24px;
-    }
-
-    input, select, textarea {
-      width: 100%;
-      padding: 12px 14px;
-      border-radius: 12px;
-      border: 1px solid #E2E8F0;
-      background: white;
-      font-size: 14px;
-    }
-
-    label { font-size: 14px; font-weight: 600; color: #475569; }
-
-    .form-grid { display: grid; gap: 14px; }
-    .form-row { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
-
-    footer {
-      background: white;
-      border-top: 1px solid var(--ice);
-      padding: 40px 0 80px;
-    }
-
-    .footer-grid { display: grid; gap: 24px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
-
-    .legal {
-      margin-top: 18px;
-      font-size: 12px;
-      color: #94A3B8;
-    }
-
-    @media (max-width: 980px) {
-      .nav-links { display: none; }
-      .floating-cta { display: flex; }
-      .sticky-mobile { display: flex; }
-      .section { padding: 64px 0; }
-    }
-
-    @media (prefers-reduced-motion: reduce) {
-      * { scroll-behavior: auto !important; transition: none !important; }
-    }
-  </style>
+  <meta property="og:image" content="assets/img/og-placeholder.svg" />
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="assets/css/pages/home.css" />
 </head>
 <body>
   <header>
     <div class="container nav">
-      <a class="logo" href="#accueil">
+      <a class="logo" href="index.html">
         <div class="logo-mark">LP</div>
         <div>
           <div style="font-weight: 700; color: var(--night);">LES PORTES D'AZUR</div>
@@ -296,24 +25,33 @@
         </div>
       </a>
       <nav class="nav-links">
-        <a href="#accueil">Accueil</a>
-        <a href="#services">Services</a>
-        <a href="#realisations">Réalisations</a>
-        <a href="#tarifs">Tarifs</a>
-        <a href="#devis">Devis</a>
-        <a href="#contact">Contact</a>
-        <a href="#faq">FAQ</a>
+        <a href="index.html">Accueil</a>
+        <a href="services.html">Services</a>
+        <a href="realisations.html">Réalisations</a>
+        <a href="devis.html">Devis</a>
+        <a href="contact.html">Contact</a>
+        <a href="faq.html">FAQ</a>
       </nav>
-      <div style="display: flex; gap: 10px; align-items: center;">
+      <div class="nav-actions">
         <a class="btn btn-secondary" href="tel:+33675424908" onclick="trackCTA('Appel header')">06 75 42 49 08</a>
-        <a class="btn btn-primary" href="#devis" onclick="trackCTA('Devis header')">Demander un devis</a>
+        <a class="btn btn-primary" href="devis.html" onclick="trackCTA('Devis header')">Demander un devis</a>
+        <button class="mobile-toggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
       </div>
+    </div>
+    <div class="mobile-menu">
+      <a href="index.html">Accueil</a>
+      <a href="services.html">Services</a>
+      <a href="realisations.html">Réalisations</a>
+      <a href="devis.html">Devis</a>
+      <a href="contact.html">Contact</a>
+      <a href="faq.html">FAQ</a>
     </div>
   </header>
 
-  <section class="hero section" id="accueil">
+  <section class="hero section">
+    <div class="hero-blob"></div>
     <div class="container hero-grid">
-      <div>
+      <div class="fade-up">
         <span class="badge">Étudiants disponibles • matériel fourni</span>
         <h1>Nettoyage & jardinage qui rassure, résultats visibles dès la première visite.</h1>
         <p style="font-size: 18px; color: #475569;">
@@ -322,31 +60,27 @@
         </p>
         <div class="hero-actions">
           <a class="btn btn-primary" href="tel:+33675424908" onclick="trackCTA('Appel hero')">Appeler</a>
-          <a class="btn btn-secondary" href="#devis" onclick="trackCTA('Devis hero')">Demander un devis</a>
+          <a class="btn btn-secondary" href="devis.html" onclick="trackCTA('Devis hero')">Demander un devis</a>
           <a class="btn btn-ghost" href="sms:+33675424908?&body=Bonjour%2C%20je%20souhaite%20un%20devis%20pour%20%5Bservice%5D%20%C3%A0%20%5Bville%5D." onclick="trackCTA('SMS hero')">Envoyer un SMS</a>
         </div>
-        <div class="inline-links">
-          <a class="btn btn-secondary" href="#realisations" onclick="trackCTA('Voir realisations')">Voir nos réalisations</a>
-          <a class="btn btn-ghost" href="#estimation" onclick="trackCTA('Estimer mon besoin')">Estimer mon besoin</a>
-        </div>
-        <div style="margin-top: 20px; display: flex; gap: 10px; flex-wrap: wrap;">
+        <div style="margin-top: 16px; display: flex; gap: 10px; flex-wrap: wrap;">
           <span class="badge">Devis gratuit</span>
           <span class="badge">Matériel fourni</span>
           <span class="badge">Ponctuels</span>
         </div>
         <p style="margin-top: 12px; font-size: 14px; color: #64748B;">Appel direct : 06 75 42 49 08</p>
       </div>
-      <div class="card">
+      <div class="hero-card fade-up">
         <h2 style="margin-top: 0; color: var(--night);">Besoin d'un devis rapide ?</h2>
         <p style="color: #475569;">Indiquez votre service, nous vous rappelons rapidement avec une proposition claire.</p>
-        <div class="form-grid" style="margin-top: 16px;">
+        <div class="grid" style="margin-top: 16px; gap: 14px;">
           <div>
             <label for="hero-service">Service souhaité</label>
             <select id="hero-service">
               <option>Nettoyage voiture</option>
               <option>Nettoyage terrasse</option>
               <option>Nettoyage canapé & tissus</option>
-              <option>Jardinage</option>
+              <option>Travaux de jardinage</option>
             </select>
           </div>
           <div>
@@ -366,39 +100,39 @@
 
   <section class="section" id="services">
     <div class="container">
-      <h2 class="section-title">Services en un coup d'œil</h2>
-      <p class="section-subtitle">Nettoyage en profondeur : poussières, taches, mousse, salissures incrustées, résidus, fientes d'oiseaux ou salissures d'animaux.</p>
+      <h2 class="section-title fade-up">Services</h2>
+      <p class="section-subtitle fade-up">Nettoyage en profondeur : poussières, taches, mousse, salissures incrustées, résidus, fientes d'oiseaux / salissures d'animaux, etc. Nous disposons de tout le matériel nécessaire.</p>
       <div class="grid grid-4" style="margin-top: 28px;">
-        <div class="card">
+        <div class="card fade-up">
           <h3>Nettoyage voiture</h3>
           <p>Intérieur et extérieur pour retrouver une voiture fraîche, propre et valorisée.</p>
-          <a class="btn btn-ghost" href="#service-voiture">En savoir plus →</a>
+          <a class="btn btn-ghost" href="services.html#voiture">Voir le détail →</a>
         </div>
-        <div class="card">
+        <div class="card fade-up">
           <h3>Nettoyage terrasse</h3>
           <p>Dalles, murs et mobilier extérieur nettoyés en profondeur et en douceur.</p>
-          <a class="btn btn-ghost" href="#service-terrasse">En savoir plus →</a>
+          <a class="btn btn-ghost" href="services.html#terrasse">Voir le détail →</a>
         </div>
-        <div class="card">
+        <div class="card fade-up">
           <h3>Nettoyage canapé & tissus</h3>
           <p>Détachage, traitement des odeurs et rafraîchissement des textiles.</p>
-          <a class="btn btn-ghost" href="#service-canape">En savoir plus →</a>
+          <a class="btn btn-ghost" href="services.html#canape">Voir le détail →</a>
         </div>
-        <div class="card">
-          <h3>Jardinage</h3>
+        <div class="card fade-up">
+          <h3>Travaux de jardinage</h3>
           <p>Tonte, taille, désherbage : un extérieur propre et entretenu toute l'année.</p>
-          <a class="btn btn-ghost" href="#service-jardin">En savoir plus →</a>
+          <a class="btn btn-ghost" href="services.html#jardinage">Voir le détail →</a>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="section" id="estimation" style="background: white;">
+  <section class="section" style="background: white;">
     <div class="container grid grid-2">
-      <div>
+      <div class="fade-up">
         <h2 class="section-title">Pourquoi nous choisir ?</h2>
         <p class="section-subtitle">Un service fiable, professionnel et chaleureux.</p>
-        <div class="grid grid-5" style="margin-top: 24px;">
+        <div class="grid grid-3" style="margin-top: 20px;">
           <div class="card">Ponctualité et respect des horaires.</div>
           <div class="card">Matériel fourni et adapté.</div>
           <div class="card">Résultats visibles et durables.</div>
@@ -406,17 +140,17 @@
           <div class="card">Équipe flexible, réponse rapide.</div>
         </div>
       </div>
-      <div class="card">
+      <div class="card fade-up">
         <h3 style="margin-top: 0;">Estimation rapide</h3>
         <p style="color: #475569;">Fourchette indicative et non contractuelle. Pour un prix précis, demandez un devis.</p>
-        <div class="form-grid" style="margin-top: 16px;">
+        <div class="grid" style="margin-top: 16px; gap: 14px;">
           <div>
             <label for="estimate-service">Service</label>
             <select id="estimate-service">
               <option>Nettoyage voiture</option>
               <option>Nettoyage terrasse</option>
               <option>Nettoyage canapé & tissus</option>
-              <option>Jardinage</option>
+              <option>Travaux de jardinage</option>
             </select>
           </div>
           <div>
@@ -431,7 +165,7 @@
             <div style="font-size: 13px; color: #475569;">Estimation :</div>
             <div id="estimate-result" style="font-size: 22px; font-weight: 700; color: var(--night);">80 € à 220 € TTC</div>
           </div>
-          <a class="btn btn-primary" href="#devis" onclick="trackCTA('Devis estimation')">Devis précis</a>
+          <a class="btn btn-primary" href="devis.html" onclick="trackCTA('Devis estimation')">Devis précis</a>
         </div>
       </div>
     </div>
@@ -439,19 +173,19 @@
 
   <section class="section">
     <div class="container grid grid-2">
-      <div class="card">
+      <div class="card fade-up">
         <h2 style="margin-top: 0;">Qui sommes-nous ?</h2>
         <p style="color: #475569;">
           Bonjour, nous sommes deux auto-entrepreneurs et avons fondé Les Portes d'Azur, une entreprise locale de nettoyage.
           Nous intervenons chez les particuliers avec sérieux, ponctualité et un travail soigné, pour redonner propreté et éclat à vos espaces.
-          Notre promesse : des résultats visibles, dans le respect total des lieux. Matériel fourni et équipe flexible.
+          Nous respectons totalement les lieux, le matériel est fourni et nous envoyons des devis rapides.
         </p>
         <div class="hero-actions">
           <a class="btn btn-primary" href="tel:+33675424908" onclick="trackCTA('Appel qui sommes nous')">Appeler</a>
-          <a class="btn btn-secondary" href="#devis" onclick="trackCTA('Devis qui sommes nous')">Demander un devis</a>
+          <a class="btn btn-secondary" href="devis.html" onclick="trackCTA('Devis qui sommes nous')">Demander un devis</a>
         </div>
       </div>
-      <div class="card">
+      <div class="card fade-up">
         <h3 style="margin-top: 0;">Petits pros & syndics</h3>
         <p style="color: #475569;">Nous accompagnons également les petits professionnels, syndics et commerces de proximité.</p>
         <ul class="list">
@@ -463,358 +197,54 @@
     </div>
   </section>
 
+  <section class="section" style="background: white;">
+    <div class="container">
+      <h2 class="section-title fade-up">Comment ça marche</h2>
+      <p class="section-subtitle fade-up">Simple, rapide, efficace.</p>
+      <div class="grid grid-3" style="margin-top: 24px;">
+        <div class="card fade-up"><strong>1. Contact rapide</strong><p>Appel, SMS ou formulaire. Nous confirmons votre besoin et votre secteur.</p></div>
+        <div class="card fade-up"><strong>2. Intervention soignée</strong><p>Nous arrivons équipés, respectons vos espaces et travaillons proprement.</p></div>
+        <div class="card fade-up"><strong>3. Résultat visible</strong><p>Vous validez le résultat et recevez des conseils pour entretenir.</p></div>
+      </div>
+    </div>
+  </section>
+
   <section class="section" id="realisations">
     <div class="container">
-      <h2 class="section-title">Avant / Après</h2>
-      <p class="section-subtitle">Quelques exemples de résultats (placeholders).</p>
+      <h2 class="section-title fade-up">Avant / Après</h2>
+      <p class="section-subtitle fade-up">Aperçu de résultats (placeholders).</p>
       <div class="before-after" style="margin-top: 24px;">
-        <div class="card"><div class="placeholder">Avant / Après 1</div></div>
-        <div class="card"><div class="placeholder">Avant / Après 2</div></div>
-        <div class="card"><div class="placeholder">Avant / Après 3</div></div>
-        <div class="card"><div class="placeholder">Avant / Après 4</div></div>
-        <div class="card"><div class="placeholder">Avant / Après 5</div></div>
-        <div class="card"><div class="placeholder">Avant / Après 6</div></div>
+        <div class="card fade-up"><div class="placeholder">Avant / Après 1</div></div>
+        <div class="card fade-up"><div class="placeholder">Avant / Après 2</div></div>
+        <div class="card fade-up"><div class="placeholder">Avant / Après 3</div></div>
+        <div class="card fade-up"><div class="placeholder">Avant / Après 4</div></div>
+        <div class="card fade-up"><div class="placeholder">Avant / Après 5</div></div>
+        <div class="card fade-up"><div class="placeholder">Avant / Après 6</div></div>
       </div>
-      <div class="card" style="margin-top: 28px;">
-        <h3 style="margin-top: 0;">Nos engagements</h3>
-        <ul class="list">
-          <li>Ponctualité et respect des horaires.</li>
-          <li>Respect des lieux et nettoyage propre.</li>
-          <li>Sécurité et produits adaptés aux surfaces.</li>
-          <li>Résultats visibles et conseils d'entretien.</li>
-        </ul>
+      <div style="margin-top: 20px;">
+        <a class="btn btn-secondary" href="realisations.html" onclick="trackCTA('Voir realisations')">Voir toutes les réalisations</a>
       </div>
     </div>
   </section>
 
   <section class="section" style="background: white;">
     <div class="container">
-      <h2 class="section-title">Comment ça marche</h2>
-      <p class="section-subtitle">Simple, rapide, efficace.</p>
-      <div class="grid grid-3" style="margin-top: 28px;">
-        <div class="card"><strong>1. Contact rapide</strong><p>Appel, SMS ou formulaire. Nous confirmons votre besoin et votre secteur.</p></div>
-        <div class="card"><strong>2. Intervention soignée</strong><p>Nous arrivons équipés, respectons vos espaces et travaillons proprement.</p></div>
-        <div class="card"><strong>3. Résultat visible</strong><p>Vous validez le résultat et recevez des conseils pour entretenir.</p></div>
+      <h2 class="section-title fade-up">Avis clients</h2>
+      <p class="section-subtitle fade-up">Avis (exemples) pour projection.</p>
+      <div class="grid grid-3" style="margin-top: 24px;">
+        <div class="card fade-up">« Service rapide, terrasse impeccable. » — Élodie R.</div>
+        <div class="card fade-up">« Très bon nettoyage voiture, intérieur comme neuf. » — Marc D.</div>
+        <div class="card fade-up">« Canapé rafraîchi, odeurs supprimées. » — Sabrina L.</div>
+        <div class="card fade-up">« Jardin nickel et bien taillé. » — Hugo P.</div>
+        <div class="card fade-up">« Ponctuels, matériel fourni, résultat visible tout de suite. » — Nathalie C.</div>
+        <div class="card fade-up">« Devis clair, équipe agréable, je recommande. » — Julien M.</div>
       </div>
     </div>
   </section>
 
-  <section class="section" id="tarifs">
+  <section class="section">
     <div class="container">
-      <h2 class="section-title">Tarifs indicatifs</h2>
-      <p class="section-subtitle">Toujours « à partir de ». Le prix final dépend de la surface, de l'état et des options.</p>
-      <div class="grid grid-4" style="margin-top: 24px;">
-        <div class="card"><small>Nettoyage voiture</small><h3>à partir de 40 €</h3><small>Estimation indicative, devis gratuit.</small></div>
-        <div class="card"><small>Nettoyage terrasse</small><h3>à partir de 80 €</h3><small>Estimation indicative, devis gratuit.</small></div>
-        <div class="card"><small>Nettoyage canapé</small><h3>à partir de 70 €</h3><small>Estimation indicative, devis gratuit.</small></div>
-        <div class="card"><small>Jardinage</small><h3>à partir de 60 €</h3><small>Estimation indicative, devis gratuit.</small></div>
-      </div>
-      <div class="card" style="margin-top: 24px;">
-        <h3 style="margin-top: 0;">Ce qui est inclus</h3>
-        <ul class="list">
-          <li>Matériel fourni.</li>
-          <li>Nettoyage en profondeur : poussières, taches, mousse, salissures incrustées.</li>
-          <li>Conseils pour entretenir vos surfaces.</li>
-        </ul>
-        <p style="font-size: 12px; color: #94A3B8;">*Tarifs indicatifs non contractuels. Un devis personnalisé vous sera proposé après échange.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="services-details" style="background: white;">
-    <div class="container">
-      <h2 class="section-title">Détails par service</h2>
-      <div class="grid" style="margin-top: 24px;">
-        <div class="card" id="service-voiture">
-          <h3>Nettoyage voiture</h3>
-          <p>Intérieur / extérieur pour un véhicule propre et valorisé.</p>
-          <div class="service-list grid grid-3">
-            <div>
-              <strong>Ce qui est inclus</strong>
-              <ul>
-                <li>Aspiration complète habitacle.</li>
-                <li>Nettoyage plastiques et tableau de bord.</li>
-                <li>Vitres intérieures et extérieures.</li>
-                <li>Lavage carrosserie et jantes.</li>
-              </ul>
-            </div>
-            <div>
-              <strong>Résultats typiques</strong>
-              <ul>
-                <li>Habitacle désodorisé.</li>
-                <li>Carrosserie brillante.</li>
-                <li>Finitions propres et sans traces.</li>
-              </ul>
-            </div>
-            <div>
-              <strong>Options</strong>
-              <ul>
-                <li>Protection plastiques.</li>
-                <li>Shampoing sièges.</li>
-                <li>Traitement hydrophobe.</li>
-              </ul>
-            </div>
-          </div>
-          <div style="margin-top: 16px; background: var(--ice); padding: 12px 16px; border-radius: 12px;">
-            <strong>Conseil pro :</strong> Pensez à vider le coffre avant notre arrivée pour un nettoyage plus rapide.
-          </div>
-          <div style="margin-top: 16px;">
-            <a class="btn btn-primary" href="#devis" onclick="trackCTA('Devis nettoyage voiture')">Demander un devis</a>
-          </div>
-        </div>
-
-        <div class="card" id="service-terrasse">
-          <h3>Nettoyage terrasse</h3>
-          <p>Dalles, murs, mobilier : un extérieur propre et sûr.</p>
-          <div class="service-list grid grid-3">
-            <div>
-              <strong>Ce qui est inclus</strong>
-              <ul>
-                <li>Nettoyage dalles, margelles et joints.</li>
-                <li>Traitement des mousses et salissures.</li>
-                <li>Nettoyage des murs et murets.</li>
-                <li>Remise en état du mobilier extérieur.</li>
-              </ul>
-            </div>
-            <div>
-              <strong>Résultats typiques</strong>
-              <ul>
-                <li>Terrasse éclaircie.</li>
-                <li>Surfaces moins glissantes.</li>
-                <li>Extérieurs plus accueillants.</li>
-              </ul>
-            </div>
-            <div>
-              <strong>Options</strong>
-              <ul>
-                <li>Protection anti-mousse.</li>
-                <li>Finition hydrofuge.</li>
-                <li>Évacuation des déchets.</li>
-              </ul>
-            </div>
-          </div>
-          <div style="margin-top: 16px; background: var(--ice); padding: 12px 16px; border-radius: 12px;">
-            <strong>Conseil pro :</strong> Un entretien régulier évite l'encrassement et prolonge la durée de vie des matériaux.
-          </div>
-          <div style="margin-top: 16px;">
-            <a class="btn btn-primary" href="#devis" onclick="trackCTA('Devis nettoyage terrasse')">Demander un devis</a>
-          </div>
-        </div>
-
-        <div class="card" id="service-canape">
-          <h3>Nettoyage canapé & tissus</h3>
-          <p>Détachage, odeurs, rafraîchissement des textiles.</p>
-          <div class="service-list grid grid-3">
-            <div>
-              <strong>Ce qui est inclus</strong>
-              <ul>
-                <li>Aspiration et dépoussiérage.</li>
-                <li>Traitement des taches courantes.</li>
-                <li>Neutralisation des odeurs.</li>
-                <li>Nettoyage des accoudoirs et coussins.</li>
-              </ul>
-            </div>
-            <div>
-              <strong>Résultats typiques</strong>
-              <ul>
-                <li>Tissus ravivés.</li>
-                <li>Odeurs réduites.</li>
-                <li>Texture plus douce.</li>
-              </ul>
-            </div>
-            <div>
-              <strong>Options</strong>
-              <ul>
-                <li>Protection anti-taches.</li>
-                <li>Traitement allergènes.</li>
-                <li>Nettoyage rideaux et tapis.</li>
-              </ul>
-            </div>
-          </div>
-          <div style="margin-top: 16px; background: var(--ice); padding: 12px 16px; border-radius: 12px;">
-            <strong>Conseil pro :</strong> Testez toujours un produit sur une zone discrète si vous entretenez vous-même.
-          </div>
-          <div style="margin-top: 16px;">
-            <a class="btn btn-primary" href="#devis" onclick="trackCTA('Devis nettoyage canape')">Demander un devis</a>
-          </div>
-        </div>
-
-        <div class="card" id="service-jardin">
-          <h3>Jardinage</h3>
-          <p>Tonte, taille, désherbage : un extérieur soigné.</p>
-          <div class="service-list grid grid-3">
-            <div>
-              <strong>Ce qui est inclus</strong>
-              <ul>
-                <li>Tonte et finition des bordures.</li>
-                <li>Taille de haies et arbustes.</li>
-                <li>Désherbage manuel ou mécanique.</li>
-                <li>Ramassage des feuilles.</li>
-              </ul>
-            </div>
-            <div>
-              <strong>Résultats typiques</strong>
-              <ul>
-                <li>Jardin plus net.</li>
-                <li>Allées dégagées.</li>
-                <li>Meilleure santé des végétaux.</li>
-              </ul>
-            </div>
-            <div>
-              <strong>Options</strong>
-              <ul>
-                <li>Évacuation des déchets verts.</li>
-                <li>Plantations saisonnières.</li>
-                <li>Paillage.</li>
-              </ul>
-            </div>
-          </div>
-          <div style="margin-top: 16px; background: var(--ice); padding: 12px 16px; border-radius: 12px;">
-            <strong>Conseil pro :</strong> Planifiez deux passages par saison pour garder un jardin toujours présentable.
-          </div>
-          <div style="margin-top: 16px;">
-            <a class="btn btn-primary" href="#devis" onclick="trackCTA('Devis jardinage')">Demander un devis</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="card" style="margin-top: 24px;">
-        <h3>Quel service pour mon besoin ?</h3>
-        <div class="grid grid-3" style="margin-top: 16px;">
-          <div class="card">Taches, odeurs, tissus : choisissez le nettoyage canapé & tissus.</div>
-          <div class="card">Extérieurs ternes : le nettoyage terrasse redonne de l'éclat.</div>
-          <div class="card">Entretien régulier : le jardinage assure un extérieur net.</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="faq">
-    <div class="container grid grid-2">
-      <div>
-        <h2 class="section-title">FAQ rapide</h2>
-        <p class="section-subtitle">Les réponses aux questions les plus courantes.</p>
-        <div class="faq-list" style="margin-top: 18px;">
-          <div class="faq-item active">
-            <button class="faq-question">Intervenez-vous chez les particuliers ? <span>−</span></button>
-            <div class="faq-answer">Oui, nous intervenons principalement chez les particuliers. Un bloc dédié pour petits pros et syndics est disponible si besoin.</div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-question">Le devis est-il gratuit ? <span>+</span></button>
-            <div class="faq-answer">Oui, le devis est gratuit et sans engagement.</div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-question">Fournissez-vous le matériel ? <span>+</span></button>
-            <div class="faq-answer">Oui, nous venons avec tout le matériel nécessaire, adapté à chaque surface.</div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-question">Quel est votre délai de réponse ? <span>+</span></button>
-            <div class="faq-answer">En général, nous répondons sous 24h ouvrées par téléphone ou SMS.</div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-question">Utilisez-vous des produits dangereux ? <span>+</span></button>
-            <div class="faq-answer">Non. Nous utilisons des produits adaptés et évitons les produits agressifs sur demande.</div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-question">Intervenez-vous loin de votre secteur ? <span>+</span></button>
-            <div class="faq-answer">Nous intervenons autour de votre secteur. Dites-nous votre ville pour confirmer.</div>
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <h3>Avis clients</h3>
-        <p style="color: #475569;">Avis (exemples) pour projection.</p>
-        <div class="grid" style="margin-top: 16px;">
-          <div class="card">« Service rapide, terrasse impeccable. » — Élodie R.</div>
-          <div class="card">« Très bon nettoyage voiture, intérieur comme neuf. » — Marc D.</div>
-          <div class="card">« Canapé rafraîchi, odeurs supprimées. » — Sabrina L.</div>
-          <div class="card">« Jardin nickel et bien taillé. » — Hugo P.</div>
-          <div class="card">« Ponctuels, matériel fourni, résultat visible tout de suite. » — Nathalie C.</div>
-          <div class="card">« Devis clair, équipe agréable, je recommande. » — Julien M.</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" style="background: white;">
-    <div class="container grid grid-2">
-      <div class="card">
-        <h3>Nos engagements</h3>
-        <ul class="list">
-          <li>Ponctualité et respect des lieux.</li>
-          <li>Matériel fourni, produits adaptés.</li>
-          <li>Interventions sécurisées et propres.</li>
-          <li>Résultats visibles et conseils d'entretien.</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h3>Ce que nous ne faisons pas</h3>
-        <ul class="list">
-          <li>Pas de produits dangereux sur demande.</li>
-          <li>Pas d'intervention en zone risquée sans accès sécurisé.</li>
-          <li>Pas d'engagement sans validation claire du besoin.</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="devis">
-    <div class="container grid grid-2">
-      <div>
-        <h2 class="section-title">Demander un devis</h2>
-        <p class="section-subtitle">Devis gratuit et réponse rapide. Indiquez votre besoin, nous vous recontactons.</p>
-        <div class="form-grid" style="margin-top: 18px;">
-          <div>
-            <label for="devis-service">Service</label>
-            <select id="devis-service">
-              <option>Nettoyage voiture</option>
-              <option>Nettoyage terrasse</option>
-              <option>Nettoyage canapé & tissus</option>
-              <option>Jardinage</option>
-            </select>
-          </div>
-          <div class="form-row">
-            <div>
-              <label for="devis-name">Nom</label>
-              <input id="devis-name" placeholder="Votre nom" />
-            </div>
-            <div>
-              <label for="devis-city">Ville / secteur</label>
-              <input id="devis-city" placeholder="Votre ville" />
-            </div>
-          </div>
-          <div>
-            <label for="devis-surface">Surface / taille approximative</label>
-            <input id="devis-surface" placeholder="Ex : 20 m², voiture citadine..." />
-          </div>
-          <div id="extra-field"></div>
-          <div>
-            <label for="devis-message">Message complémentaire</label>
-            <textarea id="devis-message" rows="4" placeholder="Précisez vos attentes, urgence, contraintes d'accès..."></textarea>
-          </div>
-          <button class="btn btn-primary" onclick="submitDevis()">Envoyer la demande</button>
-          <p style="font-size: 12px; color: #94A3B8;">Vos données sont utilisées uniquement pour répondre à votre demande. Devis gratuit, sans engagement.</p>
-          <div id="devis-confirm" style="display:none; background: var(--ice); padding: 12px 16px; border-radius: 12px;">Merci ! Votre demande est bien prise en compte. Nous vous répondons rapidement.</div>
-        </div>
-      </div>
-      <div class="card">
-        <h3>Récapitulatif</h3>
-        <pre id="devis-summary" style="white-space: pre-wrap; color: #475569;">Service : Nettoyage voiture
-Ville : à préciser
-Surface : à préciser
-Message : -</pre>
-        <div style="margin-top: 16px;">
-          <a class="btn btn-primary" href="tel:+33675424908" onclick="trackCTA('Appel devis')">Appeler 06 75 42 49 08</a>
-          <a class="btn btn-secondary" id="devis-sms" href="sms:+33675424908?&body=Bonjour%2C%20je%20souhaite%20un%20devis%20pour%20Nettoyage%20voiture%20%C3%A0%20%5Bville%5D." onclick="trackCTA('SMS devis')">Envoyer un SMS</a>
-        </div>
-        <p style="font-size: 12px; color: #94A3B8;">Réponse rapide • Matériel fourni • Équipe flexible</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" style="background: white;">
-    <div class="container">
-      <div class="cta-block">
+      <div class="cta-block fade-up">
         <h2>Prêt à retrouver un espace propre et net ?</h2>
         <p>Appelez-nous au 06 75 42 49 08 ou envoyez un SMS pour un devis gratuit.</p>
         <div class="hero-actions" style="justify-content: center;">
@@ -822,115 +252,6 @@ Message : -</pre>
           <a class="btn btn-secondary" href="sms:+33675424908?&body=Bonjour%2C%20je%20souhaite%20un%20devis%20pour%20%5Bservice%5D%20%C3%A0%20%5Bville%5D." onclick="trackCTA('SMS CTA final')">Envoyer un SMS</a>
         </div>
         <p style="font-size: 12px; opacity: 0.8;">Réponse rapide • Matériel fourni • Équipe flexible</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="zone-intervention">
-    <div class="container grid grid-2">
-      <div class="card">
-        <h3>Zone d'intervention</h3>
-        <p style="color: #475569;">Nous intervenons autour de votre secteur. Dites-nous votre ville pour confirmer la disponibilité.</p>
-        <ul class="list">
-          <li>Centres-villes et quartiers résidentiels.</li>
-          <li>Périphérie et zones pavillonnaires.</li>
-          <li>Petits pros et syndics sur demande.</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h3>Demande locale rapide</h3>
-        <div class="form-grid" style="margin-top: 12px;">
-          <div>
-            <label for="zone-city">Ville / secteur</label>
-            <input id="zone-city" placeholder="Votre ville" />
-          </div>
-          <div>
-            <label for="zone-need">Besoin</label>
-            <input id="zone-need" placeholder="Nettoyage terrasse, jardinage..." />
-          </div>
-          <button class="btn btn-primary" onclick="trackCTA('Zone intervention')">Vérifier la zone</button>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="blog" style="background: white;">
-    <div class="container">
-      <h2 class="section-title">Conseils d'entretien</h2>
-      <div class="grid grid-3" style="margin-top: 24px;">
-        <div class="card">
-          <h3>Entretenir sa terrasse</h3>
-          <p>Balayez régulièrement et évitez les produits agressifs pour préserver les joints.</p>
-          <p><strong>Astuce :</strong> un nettoyage en profondeur 1 à 2 fois/an suffit pour garder l'éclat.</p>
-        </div>
-        <div class="card">
-          <h3>Entretenir son canapé</h3>
-          <p>Aspirez chaque semaine et tamponnez les taches rapidement avec un chiffon doux.</p>
-          <p><strong>Astuce :</strong> un nettoyage professionnel ravive les tissus et neutralise les odeurs.</p>
-        </div>
-        <div class="card">
-          <h3>Entretenir sa voiture</h3>
-          <p>Aspirez l'habitacle et nettoyez les plastiques avec des produits adaptés.</p>
-          <p><strong>Astuce :</strong> un lavage extérieur régulier protège la carrosserie.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="contact">
-    <div class="container grid grid-2">
-      <div>
-        <h2 class="section-title">Contact</h2>
-        <p class="section-subtitle">Besoin d'un devis ou d'une information ? Nous répondons rapidement.</p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="tel:+33675424908" onclick="trackCTA('Appel contact')">Appeler 06 75 42 49 08</a>
-          <a class="btn btn-secondary" href="sms:+33675424908?&body=Bonjour%2C%20je%20souhaite%20un%20devis%20pour%20%5Bservice%5D%20%C3%A0%20%5Bville%5D." onclick="trackCTA('SMS contact')">Envoyer un SMS</a>
-        </div>
-        <div class="form-grid" style="margin-top: 18px;">
-          <div class="form-row">
-            <div>
-              <label for="contact-name">Nom</label>
-              <input id="contact-name" placeholder="Votre nom" />
-            </div>
-            <div>
-              <label for="contact-phone">Téléphone</label>
-              <input id="contact-phone" placeholder="06 00 00 00 00" />
-            </div>
-          </div>
-          <div>
-            <label for="contact-city">Ville / secteur</label>
-            <input id="contact-city" placeholder="Votre ville" />
-          </div>
-          <div>
-            <label for="contact-message">Message</label>
-            <textarea id="contact-message" rows="4" placeholder="Expliquez votre besoin"></textarea>
-          </div>
-          <button class="btn btn-primary" onclick="trackCTA('Form contact')">Envoyer</button>
-          <p style="font-size: 12px; color: #94A3B8;">Horaires : du lundi au samedi (plages à confirmer) • Délai de réponse sous 24h ouvrées.</p>
-        </div>
-      </div>
-      <div class="card">
-        <h3>Nos horaires</h3>
-        <p style="color: #475569;">Lundi - Samedi : 8h00 - 19h00 (à confirmer).</p>
-        <p style="color: #475569;">Dimanche : sur demande.</p>
-        <h3 style="margin-top: 24px;">Adresse</h3>
-        <p style="color: #475569;">Aucune adresse précise publiée. Nous intervenons autour de votre secteur.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="mentions-legales" style="background: white;">
-    <div class="container grid grid-2">
-      <div class="card">
-        <h3>Mentions légales</h3>
-        <p style="color: #475569;">LES PORTES D'AZUR — Entreprise locale de nettoyage et jardinage. Coordonnées complètes fournies sur demande.</p>
-        <p style="color: #475569;">Responsable de publication : Les Portes d'Azur.</p>
-        <p style="color: #475569;">Hébergeur : à compléter selon l'hébergeur choisi.</p>
-      </div>
-      <div class="card">
-        <h3>Politique de confidentialité</h3>
-        <p style="color: #475569;">Les données collectées via les formulaires sont utilisées uniquement pour répondre à votre demande.</p>
-        <p style="color: #475569;">Aucune donnée n'est vendue ou partagée. Vous pouvez demander la suppression de vos informations en nous contactant.</p>
       </div>
     </div>
   </section>
@@ -946,22 +267,22 @@ Message : -</pre>
       </div>
       <div>
         <strong>Navigation</strong>
-        <p><a href="#services">Services</a></p>
-        <p><a href="#realisations">Réalisations</a></p>
-        <p><a href="#tarifs">Tarifs</a></p>
-        <p><a href="#devis">Devis</a></p>
-        <p><a href="#contact">Contact</a></p>
+        <p><a href="index.html">Accueil</a></p>
+        <p><a href="services.html">Services</a></p>
+        <p><a href="realisations.html">Réalisations</a></p>
+        <p><a href="devis.html">Devis</a></p>
+        <p><a href="contact.html">Contact</a></p>
       </div>
       <div>
         <strong>Ressources</strong>
-        <p><a href="#faq">FAQ</a></p>
-        <p><a href="#zone-intervention">Zone d'intervention</a></p>
-        <p><a href="#blog">Conseils entretien</a></p>
+        <p><a href="faq.html">FAQ</a></p>
+        <p><a href="services.html">Nos services</a></p>
+        <p><a href="realisations.html">Avant / Après</a></p>
       </div>
       <div>
         <strong>Légal</strong>
-        <p><a href="#mentions-legales">Mentions légales</a></p>
-        <p><a href="#mentions-legales">Politique de confidentialité</a></p>
+        <p><a href="mentions-legales.html">Mentions légales</a></p>
+        <p><a href="politique-confidentialite.html">Politique de confidentialité</a></p>
         <p class="legal">Aucune adresse précise n'est publiée. Nous intervenons autour de votre secteur.</p>
       </div>
     </div>
@@ -977,123 +298,9 @@ Message : -</pre>
     <a class="btn btn-secondary" href="sms:+33675424908?&body=Bonjour%2C%20je%20souhaite%20un%20devis%20pour%20%5Bservice%5D%20%C3%A0%20%5Bville%5D." onclick="trackCTA('Sticky SMS')">SMS</a>
   </div>
 
-  <script>
-    const baseRanges = {
-      "Nettoyage voiture": [40, 120],
-      "Nettoyage terrasse": [80, 220],
-      "Nettoyage canapé & tissus": [70, 200],
-      "Jardinage": [60, 180]
-    };
-
-    const sizeMultipliers = {
-      "Petit (1 à 20 m²)": 1,
-      "Moyen (20 à 50 m²)": 1.4,
-      "Grand (50 m² et +)": 1.9
-    };
-
-    function trackCTA(label) {
-      console.log("CTA:", label);
-    }
-
-    const estimateService = document.getElementById("estimate-service");
-    const estimateSize = document.getElementById("estimate-size");
-    const estimateResult = document.getElementById("estimate-result");
-
-    function updateEstimate() {
-      const base = baseRanges[estimateService.value] || [60, 150];
-      const multiplier = sizeMultipliers[estimateSize.value] || 1;
-      const min = Math.round(base[0] * multiplier);
-      const max = Math.round(base[1] * multiplier);
-      estimateResult.textContent = `${min} € à ${max} € TTC`;
-    }
-
-    estimateService.addEventListener("change", updateEstimate);
-    estimateSize.addEventListener("change", updateEstimate);
-    updateEstimate();
-
-    const faqItems = document.querySelectorAll(".faq-item");
-    faqItems.forEach((item) => {
-      const button = item.querySelector(".faq-question");
-      button.addEventListener("click", () => {
-        faqItems.forEach((el) => {
-          if (el !== item) {
-            el.classList.remove("active");
-            const symbol = el.querySelector(".faq-question span");
-            if (symbol) symbol.textContent = "+";
-          }
-        });
-        item.classList.toggle("active");
-        const symbol = item.querySelector(".faq-question span");
-        if (symbol) symbol.textContent = item.classList.contains("active") ? "−" : "+";
-      });
-    });
-
-    const devisService = document.getElementById("devis-service");
-    const devisSummary = document.getElementById("devis-summary");
-    const devisSms = document.getElementById("devis-sms");
-    const devisConfirm = document.getElementById("devis-confirm");
-    const extraField = document.getElementById("extra-field");
-
-    function renderExtraField() {
-      const service = devisService.value;
-      let label = "";
-      let placeholder = "";
-      if (service === "Nettoyage voiture") {
-        label = "Type de véhicule";
-        placeholder = "Citadine, SUV, utilitaire...";
-      } else if (service === "Nettoyage terrasse") {
-        label = "Type de sol";
-        placeholder = "Dalles, pierre, bois...";
-      } else if (service === "Nettoyage canapé & tissus") {
-        label = "Type de tissu";
-        placeholder = "Tissu, velours, microfibre...";
-      } else if (service === "Jardinage") {
-        label = "Détails jardin";
-        placeholder = "Tonte, taille, désherbage...";
-      }
-      extraField.innerHTML = label
-        ? `<label>${label}</label><input placeholder="${placeholder}" />`
-        : "";
-    }
-
-    function updateSummary() {
-      const name = document.getElementById("devis-name").value || "-";
-      const city = document.getElementById("devis-city").value || "à préciser";
-      const surface = document.getElementById("devis-surface").value || "à préciser";
-      const message = document.getElementById("devis-message").value || "-";
-      devisSummary.textContent = `Service : ${devisService.value}\nNom : ${name}\nVille : ${city}\nSurface : ${surface}\nMessage : ${message}`;
-      const smsBody = `Bonjour, je souhaite un devis pour ${devisService.value} à ${city}.`;
-      devisSms.setAttribute("href", `sms:+33675424908?&body=${encodeURIComponent(smsBody)}`);
-    }
-
-    devisService.addEventListener("change", () => {
-      renderExtraField();
-      updateSummary();
-    });
-
-    ["devis-name", "devis-city", "devis-surface", "devis-message"].forEach((id) => {
-      document.getElementById(id).addEventListener("input", updateSummary);
-    });
-
-    renderExtraField();
-    updateSummary();
-
-    function submitDevis() {
-      const name = document.getElementById("devis-name").value.trim();
-      const city = document.getElementById("devis-city").value.trim();
-      if (!name || !city) {
-        devisConfirm.style.display = "block";
-        devisConfirm.textContent = "Merci de renseigner votre nom et votre ville.";
-        return;
-      }
-      devisConfirm.style.display = "block";
-      devisConfirm.textContent = "Merci ! Votre demande est bien prise en compte. Nous vous répondons rapidement.";
-      trackCTA("Envoi devis");
-    }
-
-    window.submitDevis = submitDevis;
-  </script>
-
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/animations.js"></script>
+  <script src="assets/js/forms.js"></script>
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",

@@ -1,0 +1,6 @@
+.filter-bar { display: flex; flex-wrap: wrap; gap: 10px; }
+.filter-bar .btn { border-radius: 12px; }
+.gallery { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); margin-top: 20px; }
+.gallery-card { position: relative; overflow: hidden; }
+.gallery-card .placeholder { height: 160px; }
+.tag { position: absolute; top: 12px; left: 12px; background: rgba(35, 49, 142, 0.9); color: white; font-size: 12px; padding: 4px 10px; border-radius: 999px; }
