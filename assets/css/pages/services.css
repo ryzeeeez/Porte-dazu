@@ -1,0 +1,11 @@
+.service-section {
+  scroll-margin-top: 100px;
+}
+
+.service-section .card {
+  margin-top: 20px;
+}
+
+.compare-grid .card {
+  text-align: left;
+}

@@ -1,0 +1,29 @@
+.hero-card {
+  position: relative;
+  z-index: 1;
+}
+
+.services-grid .card h3 {
+  margin-top: 0;
+}
+
+.before-after {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+
+.placeholder {
+  height: 140px;
+  border-radius: 16px;
+  background: var(--ice);
+  display: grid;
+  place-items: center;
+  font-size: 13px;
+  color: var(--night);
+  font-weight: 600;
+}
+
+.testimonials .card {
+  font-size: 14px;
+}
