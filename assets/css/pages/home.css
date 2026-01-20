@@ -1,0 +1,72 @@
+.hero-card {
+  position: relative;
+  z-index: 1;
+}
+
+.services-grid .card h3 {
+  margin-top: 0;
+}
+
+.services-grid .benefit {
+  margin-top: 8px;
+  font-size: 13px;
+  color: #64748B;
+}
+
+.quick-summary {
+  background: white;
+  border-radius: 24px;
+  padding: 28px;
+  border: 1px solid var(--ice);
+  box-shadow: var(--shadow);
+}
+
+.stepper {
+  display: grid;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.step-card {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 14px;
+  align-items: center;
+  padding: 16px;
+  border-radius: 16px;
+  background: white;
+  border: 1px solid var(--ice);
+  box-shadow: var(--shadow);
+}
+
+.step-number {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  background: var(--gradient);
+  color: white;
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+}
+
+.before-after {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+
+.placeholder {
+  height: 140px;
+  border-radius: 16px;
+  background: var(--ice);
+  display: grid;
+  place-items: center;
+  font-size: 13px;
+  color: var(--night);
+  font-weight: 600;
+}
+
+.testimonials .card {
+  font-size: 14px;
+}

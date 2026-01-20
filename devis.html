@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Demander un devis | LES PORTES D'AZUR</title>
+  <meta name="description" content="Demandez un devis gratuit pour nettoyage et jardinage. Réponse rapide par téléphone ou SMS." />
+  <meta property="og:title" content="Demander un devis | LES PORTES D'AZUR" />
+  <meta property="og:description" content="Formulaire complet, SMS et email pré-remplis pour un devis rapide." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/img/og-placeholder.svg" />
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="assets/css/pages/devis.css" />
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a class="logo" href="index.html">
+        <div class="logo-mark">LP</div>
+        <div>
+          <div style="font-weight: 700; color: var(--night);">LES PORTES D'AZUR</div>
+          <div style="font-size: 12px; color: #64748B;">Nettoyage • Jardinage</div>
+        </div>
+      </a>
+      <nav class="nav-links">
+        <a href="index.html">Accueil</a>
+        <a href="services.html">Services</a>
+        <a href="realisations.html">Réalisations</a>
+        <a href="devis.html">Devis</a>
+        <a href="contact.html">Contact</a>
+        <a href="faq.html">FAQ</a>
+      </nav>
+      <div class="nav-actions">
+        <a class="btn btn-secondary" href="tel:+33675424908" data-cta="Appel header">06 75 42 49 08</a>
+        <a class="btn btn-primary" href="devis.html" data-cta="Devis header">Demander un devis</a>
+        <button class="menu-toggle" type="button">Menu</button>
+      </div>
+    </div>
+    <div class="mobile-menu">
+      <a href="index.html">Accueil</a>
+      <a href="services.html">Services</a>
+      <a href="realisations.html">Réalisations</a>
+      <a href="devis.html">Devis</a>
+      <a href="contact.html">Contact</a>
+      <a href="faq.html">FAQ</a>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container grid grid-2" data-animate>
+      <div>
+        <h1 class="section-title">Demander un devis</h1>
+        <p class="section-subtitle">Devis gratuit et réponse rapide. Indiquez votre besoin, nous vous recontactons.</p>
+        <div class="progress" aria-hidden="true">
+          <div class="progress-step active"></div>
+          <div class="progress-step"></div>
+        </div>
+        <p style="font-size: 13px; color: #64748B;">Étape 1/2 — Vos informations • Étape 2/2 — Confirmation</p>
+
+        <form id="devis-form" class="form-grid" style="margin-top: 18px;">
+          <div class="form-row">
+            <div>
+              <label for="devis-name">Nom *</label>
+              <input id="devis-name" name="name" required placeholder="Votre nom" />
+            </div>
+            <div>
+              <label for="devis-phone">Téléphone *</label>
+              <input id="devis-phone" name="phone" required placeholder="06 00 00 00 00" />
+            </div>
+          </div>
+          <div>
+            <label for="devis-email">Email (optionnel)</label>
+            <input id="devis-email" name="email" type="email" placeholder="vous@email.fr" />
+          </div>
+          <div>
+            <label for="devis-city">Ville / CP *</label>
+            <input id="devis-city" name="city" required placeholder="Votre ville / code postal" />
+          </div>
+          <div>
+            <label for="devis-service">Service *</label>
+            <select id="devis-service" name="service" required>
+              <option>Nettoyage voiture</option>
+              <option>Nettoyage terrasse</option>
+              <option>Nettoyage canapé & tissus</option>
+              <option>Jardinage</option>
+            </select>
+          </div>
+          <div>
+            <label for="devis-description">Description *</label>
+            <textarea id="devis-description" name="description" rows="4" required placeholder="Précisez vos besoins, surfaces, contraintes d'accès..."></textarea>
+          </div>
+          <div id="service-fields" class="form-row"></div>
+          <div>
+            <label for="devis-urgence">Urgence</label>
+            <select id="devis-urgence" name="urgence">
+              <option>Pas d'urgence</option>
+              <option>48h</option>
+              <option>7 jours</option>
+              <option>À planifier</option>
+            </select>
+          </div>
+          <label class="checkbox">
+            <input type="checkbox" id="devis-rgpd" required />
+            J'accepte que mes informations soient utilisées pour me recontacter.
+          </label>
+          <button class="btn btn-primary" type="submit" data-cta="Envoi devis">Envoyer la demande</button>
+          <div id="devis-confirm" class="confirmation"></div>
+          <p style="font-size: 12px; color: #94A3B8;">Vos données sont utilisées uniquement pour répondre à votre demande. Devis gratuit, sans engagement.</p>
+        </form>
+      </div>
+
+      <div class="card">
+        <h3>Récapitulatif</h3>
+        <pre id="devis-summary" class="summary-box">Service : Nettoyage voiture
+Nom : -
+Téléphone : -
+Email : -
+Ville / CP : à préciser
+Description : -</pre>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="tel:+33675424908" data-cta="Appel devis">Appeler 06 75 42 49 08</a>
+          <a class="btn btn-secondary" id="devis-sms" href="sms:+33675424908" data-cta="SMS devis">Envoyer un SMS</a>
+          <a class="btn btn-ghost" id="devis-mail" href="mailto:contact@lesportesdazur.fr" data-cta="Email devis">Envoyer par email</a>
+        </div>
+        <div class="sms-box">
+          <strong>Devis par SMS en 20 secondes</strong>
+          <p>Message type :</p>
+          <p>« Bonjour, je souhaite un devis pour [service] à [ville]. Détails : [message]. »</p>
+          <a class="btn btn-outline" href="sms:+33675424908?&body=Bonjour%2C%20je%20souhaite%20un%20devis%20pour%20%5Bservice%5D%20%C3%A0%20%5Bville%5D.%20D%C3%A9tails%20%3A%20%5Bmessage%5D." data-cta="SMS devis rapide">Envoyer un SMS rapide</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <strong>LES PORTES D'AZUR</strong>
+        <p>Nettoyage • Jardinage</p>
+        <p>Entreprise locale, équipe flexible, matériel fourni, interventions soignées.</p>
+        <p><a href="tel:+33675424908">06 75 42 49 08</a></p>
+        <p><a href="sms:+33675424908">Envoyer un SMS</a></p>
+      </div>
+      <div>
+        <strong>Navigation</strong>
+        <p><a href="services.html">Services</a></p>
+        <p><a href="realisations.html">Réalisations</a></p>
+        <p><a href="devis.html">Devis</a></p>
+        <p><a href="contact.html">Contact</a></p>
+        <p><a href="faq.html">FAQ</a></p>
+      </div>
+      <div>
+        <strong>Légal</strong>
+        <p><a href="mentions-legales.html">Mentions légales</a></p>
+        <p><a href="politique-confidentialite.html">Politique de confidentialité</a></p>
+        <p class="legal">Aucune adresse précise n'est publiée. Nous intervenons autour de votre secteur.</p>
+      </div>
+    </div>
+    <div class="legal" style="text-align: center;">© 2024 LES PORTES D'AZUR. Tous droits réservés.</div>
+  </footer>
+
+  <div class="floating-cta">
+    <a class="btn btn-primary btn-icon" href="tel:+33675424908" data-cta="Floating Appel"><span aria-hidden="true">📞</span>Appeler</a>
+    <a class="btn btn-secondary btn-icon" href="sms:+33675424908" data-cta="Floating SMS"><span aria-hidden="true">💬</span>SMS</a>
+  </div>
+  <div class="sticky-mobile">
+    <a class="btn btn-primary btn-icon" href="tel:+33675424908" data-cta="Sticky Appel"><span aria-hidden="true">📞</span>Appeler</a>
+    <a class="btn btn-secondary btn-icon" href="sms:+33675424908" data-cta="Sticky SMS"><span aria-hidden="true">💬</span>SMS</a>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/animations.js"></script>
+  <script src="assets/js/forms.js"></script>
+</body>
+</html>
