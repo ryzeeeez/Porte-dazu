@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://lesportesdazur.fr/sitemap.xml
