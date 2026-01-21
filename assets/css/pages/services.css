@@ -1,0 +1,35 @@
+.service-section {
+  scroll-margin-top: 100px;
+  border: 1px solid rgba(35, 49, 142, 0.12);
+  box-shadow: var(--shadow);
+}
+
+.service-section .card {
+  margin-top: 20px;
+  background: linear-gradient(120deg, rgba(233, 238, 255, 0.7), rgba(255, 255, 255, 1));
+}
+
+.service-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.service-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 14px;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(120deg, rgba(35, 49, 142, 0.12), rgba(91, 115, 240, 0.25));
+  color: var(--night);
+}
+
+.service-icon svg {
+  width: 22px;
+  height: 22px;
+}
+
+.compare-grid .card {
+  text-align: left;
+}
