@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact | LES PORTES D'AZUR</title>
+  <meta name="description" content="Contactez LES PORTES D'AZUR pour un devis rapide. Appel, SMS ou formulaire." />
+  <meta property="og:title" content="Contact | LES PORTES D'AZUR" />
+  <meta property="og:description" content="Appel, SMS ou formulaire rapide. Réponse sous 24h ouvrées." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/img/og-placeholder.svg" />
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="assets/css/pages/contact.css" />
+</head>
+<body>
+  <div class="loader" aria-hidden="true"><span></span></div>
+  <div class="page-overlay" aria-hidden="true"></div>
+  <header>
+    <div class="container nav">
+      <a class="logo" href="index.html">
+        <div class="logo-mark">LP</div>
+        <div>
+          <div style="font-weight: 700; color: var(--night);">LES PORTES D'AZUR</div>
+          <div style="font-size: 12px; color: #64748B;">Nettoyage • Jardinage</div>
+        </div>
+      </a>
+      <nav class="nav-links">
+        <a href="index.html">Accueil</a>
+        <a href="services.html">Services</a>
+        <a href="realisations.html">Réalisations</a>
+        <a href="devis.html">Devis</a>
+        <a href="contact.html">Contact</a>
+        <a href="faq.html">FAQ</a>
+      </nav>
+      <div class="nav-actions">
+        <a class="btn btn-secondary" href="tel:+33675424908" data-cta="Appel header">06 75 42 49 08</a>
+        <a class="btn btn-primary" href="devis.html" data-cta="Devis header">Demander un devis</a>
+        <button class="menu-toggle" type="button">Menu</button>
+      </div>
+    </div>
+    <div class="mobile-menu">
+      <a href="index.html">Accueil</a>
+      <a href="services.html">Services</a>
+      <a href="realisations.html">Réalisations</a>
+      <a href="devis.html">Devis</a>
+      <a href="contact.html">Contact</a>
+      <a href="faq.html">FAQ</a>
+    </div>
+    <div class="menu-backdrop" aria-hidden="true"></div>
+  </header>
+
+  <section class="section">
+    <div class="container grid grid-2" data-animate>
+      <div>
+        <h1 class="section-title">Contact</h1>
+        <p class="section-subtitle">Besoin d'un devis ou d'une information ? Nous répondons rapidement.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="tel:+33675424908" data-cta="Appel contact">Appeler 06 75 42 49 08</a>
+          <a class="btn btn-secondary" href="sms:+33675424908?&body=Bonjour%2C%20je%20souhaite%20un%20devis%20pour%20%5Bservice%5D%20%C3%A0%20%5Bville%5D." data-cta="SMS contact">Envoyer un SMS</a>
+        </div>
+        <form id="contact-form" class="form-grid" style="margin-top: 18px;">
+          <div class="form-row">
+            <div>
+              <label for="contact-name">Nom</label>
+              <input id="contact-name" name="name" placeholder="Votre nom" />
+            </div>
+            <div>
+              <label for="contact-phone">Téléphone</label>
+              <input id="contact-phone" name="phone" placeholder="06 00 00 00 00" />
+            </div>
+          </div>
+          <div>
+            <label for="contact-message">Message</label>
+            <textarea id="contact-message" name="message" rows="4" placeholder="Expliquez votre besoin"></textarea>
+          </div>
+          <button class="btn btn-primary" type="submit" data-cta="Envoi contact">Envoyer</button>
+          <div id="contact-confirm" class="confirmation"></div>
+          <p style="font-size: 12px; color: #94A3B8;">Horaires : du lundi au samedi (plages à confirmer) • Délai de réponse sous 24h ouvrées.</p>
+        </form>
+      </div>
+      <div class="card contact-card">
+        <div>
+          <h3>Nos horaires</h3>
+          <p style="color: #475569;">Lundi - Samedi : 8h00 - 19h00 (à confirmer).</p>
+          <p style="color: #475569;">Dimanche : sur demande.</p>
+        </div>
+        <div>
+          <h3>Zone d'intervention</h3>
+          <p style="color: #475569;">Nous intervenons autour de votre secteur. Dites-nous votre ville pour confirmer.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <strong>LES PORTES D'AZUR</strong>
+        <p>Nettoyage • Jardinage</p>
+        <p>Entreprise locale, équipe flexible, matériel fourni, interventions soignées.</p>
+        <p><a href="tel:+33675424908">06 75 42 49 08</a></p>
+        <p><a href="sms:+33675424908">Envoyer un SMS</a></p>
+      </div>
+      <div>
+        <strong>Navigation</strong>
+        <p><a href="services.html">Services</a></p>
+        <p><a href="realisations.html">Réalisations</a></p>
+        <p><a href="devis.html">Devis</a></p>
+        <p><a href="contact.html">Contact</a></p>
+        <p><a href="faq.html">FAQ</a></p>
+      </div>
+      <div>
+        <strong>Légal</strong>
+        <p><a href="mentions-legales.html">Mentions légales</a></p>
+        <p><a href="politique-confidentialite.html">Politique de confidentialité</a></p>
+        <p class="legal">Aucune adresse précise n'est publiée. Nous intervenons autour de votre secteur.</p>
+      </div>
+    </div>
+    <div class="legal" style="text-align: center;">© 2024 LES PORTES D'AZUR. Tous droits réservés.</div>
+  </footer>
+
+  <div class="floating-cta">
+    <a class="btn btn-icon" href="tel:+33675424908" data-cta="Floating Appel">📞 Appeler</a>
+    <a class="btn btn-icon" href="sms:+33675424908" data-cta="Floating SMS">💬 SMS</a>
+  </div>
+  <div class="sticky-mobile">
+    <a class="btn btn-primary" href="tel:+33675424908" data-cta="Sticky Appel">Appeler</a>
+    <a class="btn btn-secondary" href="sms:+33675424908" data-cta="Sticky SMS">SMS</a>
+  </div>
+  <button class="scroll-top btn btn-icon" type="button" aria-label="Revenir en haut">↑</button>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/animations.js"></script>
+  <script src="assets/js/forms.js"></script>
+</body>
+</html>
