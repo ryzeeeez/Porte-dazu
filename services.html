@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="assets/css/main.css" />
   <link rel="stylesheet" href="assets/css/pages/services.css" />
 </head>
-<body>
+<body class="services-page">
   <div class="loader" aria-hidden="true"><span></span></div>
   <div class="page-overlay" aria-hidden="true"></div>
   <header>
@@ -50,181 +50,320 @@
     <div class="menu-backdrop" aria-hidden="true"></div>
   </header>
 
-  <section class="section">
+  <section class="section services-hero">
     <div class="container" data-animate>
-      <h1 class="section-title">Nos services</h1>
-      <p class="section-subtitle">Nettoyage en profondeur, matériel fourni, résultat visible. Nous disposons de tout le matériel nécessaire.</p>
-      <p style="color: #475569;">Nettoyage en profondeur : poussières, taches, mousse, salissures incrustées, résidus, fientes d'oiseaux / salissures d'animaux, etc.</p>
+      <span class="badge">Devis gratuit • Matériel fourni • Intervention soignée</span>
+      <h1 class="section-title">Nos services de nettoyage & jardinage</h1>
+      <p class="section-subtitle text-narrow">Des prestations claires, des résultats visibles et une équipe ponctuelle. Nous venons équipés pour traiter les salissures, taches, mousses et encrassements, sans abîmer vos surfaces.</p>
       <div class="hero-actions">
         <a class="btn btn-primary" href="tel:+33675424908" data-cta="Appel services">Appeler</a>
-        <a class="btn btn-secondary" href="devis.html" data-cta="Devis services">Demander un devis</a>
+        <a class="btn btn-secondary" href="sms:+33675424908?&body=Bonjour%2C%20je%20souhaite%20un%20devis%20pour%20%5Bservice%5D%20%C3%A0%20%5Bville%5D." data-cta="SMS services">SMS</a>
+        <a class="btn btn-outline" href="devis.html" data-cta="Devis services">Demander un devis</a>
+      </div>
+      <div class="service-nav" aria-label="Accès rapide aux services">
+        <a class="btn btn-ghost" href="#service-voiture">Voiture</a>
+        <a class="btn btn-ghost" href="#service-terrasse">Terrasse</a>
+        <a class="btn btn-ghost" href="#service-canape">Canapé & tissus</a>
+        <a class="btn btn-ghost" href="#service-jardin">Jardinage</a>
       </div>
     </div>
   </section>
 
-  <section class="section" style="background: white;">
-    <div class="container grid" data-animate>
-      <div class="card service-section" id="voiture">
-        <div class="service-header">
-          <div class="service-icon">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h10l4 4v4H4v-8zm10-4h2a3 3 0 0 1 3 3v2h-2v-2a1 1 0 0 0-1-1h-2V8zm-6 8h2v2H8v-2zm6 0h2v2h-2v-2zM4 6h10v4H4V6z" fill="currentColor"/></svg>
+  <section class="section services-overview">
+    <div class="container">
+      <div class="services-header" data-animate>
+        <h2 class="section-title">Nos services</h2>
+        <p class="section-subtitle text-narrow">Des prestations premium, faciles à comprendre. Chaque service inclut la protection des surfaces et un soin particulier aux finitions.</p>
+      </div>
+      <div class="grid grid-4 services-grid">
+        <article class="card service-card" data-animate>
+          <div class="service-card-top">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5h10.5l2.5 3.5v4H5v-7.5zm2-6h8a3 3 0 0 1 3 3v2H6v-2a3 3 0 0 1 3-3zm2.5 8.5h2v2h-2v-2zm6 0h2v2h-2v-2z" fill="currentColor"/></svg>
+            </div>
+            <div>
+              <h3>Nettoyage voiture</h3>
+              <p class="service-card-lead">Habitacle + extérieur, finition nette et protection des surfaces.</p>
+            </div>
           </div>
-          <h2>Nettoyage voiture</h2>
+          <ul class="service-benefits">
+            <li>Résultat visible dès le départ.</li>
+            <li>Plastiques & vitres soignés.</li>
+            <li>Matériel professionnel fourni.</li>
+          </ul>
+          <div class="service-card-actions">
+            <a class="btn btn-primary btn-small" href="devis.html?service=Nettoyage%20voiture" data-cta="Devis voiture carte">Demander un devis</a>
+            <a class="btn btn-ghost btn-small" href="#service-voiture">En savoir plus</a>
+          </div>
+        </article>
+        <article class="card service-card" data-animate>
+          <div class="service-card-top">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10h16v10H4V10zm2-5h12v3H6V5zm2 7h8v6H8v-6z" fill="currentColor"/></svg>
+            </div>
+            <div>
+              <h3>Nettoyage terrasse</h3>
+              <p class="service-card-lead">Dalles, murs, mobilier : un extérieur net et sécurisé.</p>
+            </div>
+          </div>
+          <ul class="service-benefits">
+            <li>Mousses et salissures retirées.</li>
+            <li>Surfaces moins glissantes.</li>
+            <li>Protection douce des matériaux.</li>
+          </ul>
+          <div class="service-card-actions">
+            <a class="btn btn-primary btn-small" href="devis.html?service=Nettoyage%20terrasse" data-cta="Devis terrasse carte">Demander un devis</a>
+            <a class="btn btn-ghost btn-small" href="#service-terrasse">En savoir plus</a>
+          </div>
+        </article>
+        <article class="card service-card" data-animate>
+          <div class="service-card-top">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 11a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v5H4v-5zm2 7h12v2H6v-2z" fill="currentColor"/></svg>
+            </div>
+            <div>
+              <h3>Nettoyage canapé & tissus</h3>
+              <p class="service-card-lead">Rafraîchissement textile, détachage doux, odeurs neutralisées.</p>
+            </div>
+          </div>
+          <ul class="service-benefits">
+            <li>Tissus ravivés et assainis.</li>
+            <li>Odeurs réduites durablement.</li>
+            <li>Traitement adapté aux fibres.</li>
+          </ul>
+          <div class="service-card-actions">
+            <a class="btn btn-primary btn-small" href="devis.html?service=Nettoyage%20canap%C3%A9%20%26%20tissus" data-cta="Devis canape carte">Demander un devis</a>
+            <a class="btn btn-ghost btn-small" href="#service-canape">En savoir plus</a>
+          </div>
+        </article>
+        <article class="card service-card" data-animate>
+          <div class="service-card-top">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4c3 2.3 4.5 4.6 4.5 6.6a4.5 4.5 0 1 1-9 0c0-2 1.5-4.3 4.5-6.6zM4 18h16v3H4v-3z" fill="currentColor"/></svg>
+            </div>
+            <div>
+              <h3>Jardinage</h3>
+              <p class="service-card-lead">Tonte, taille et entretien régulier pour un extérieur net.</p>
+            </div>
+          </div>
+          <ul class="service-benefits">
+            <li>Finitions propres et régulières.</li>
+            <li>Allées dégagées.</li>
+            <li>Respect de la saisonnalité.</li>
+          </ul>
+          <div class="service-card-actions">
+            <a class="btn btn-primary btn-small" href="devis.html?service=Jardinage" data-cta="Devis jardin carte">Demander un devis</a>
+            <a class="btn btn-ghost btn-small" href="#service-jardin">En savoir plus</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section services-details">
+    <div class="container">
+      <div class="services-header" data-animate>
+        <h2 class="section-title">Chaque service, clairement détaillé</h2>
+        <p class="section-subtitle text-narrow">Retrouvez ce qui est inclus, les cas idéaux et les résultats typiques. Pour un devis rapide, choisissez votre service.</p>
+      </div>
+
+      <article class="card service-detail-card" id="service-voiture" data-animate>
+        <div class="service-detail-top">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5h10.5l2.5 3.5v4H5v-7.5zm2-6h8a3 3 0 0 1 3 3v2H6v-2a3 3 0 0 1 3-3zm2.5 8.5h2v2h-2v-2zm6 0h2v2h-2v-2z" fill="currentColor"/></svg>
+          </div>
+          <div>
+            <h3>Nettoyage voiture</h3>
+            <p class="service-detail-lead">Un véhicule propre et valorisé, intérieur comme extérieur.</p>
+          </div>
+          <div class="service-detail-cta">
+            <a class="btn btn-primary btn-small" href="devis.html?service=Nettoyage%20voiture" data-cta="Devis voiture detail">Demander un devis</a>
+            <p>Réponse rapide par SMS ou téléphone.</p>
+          </div>
         </div>
-        <p>Intérieur / extérieur pour un véhicule propre et valorisé.</p>
-        <div class="grid grid-3">
+        <div class="service-detail-grid">
           <div>
             <strong>Ce qui est inclus</strong>
-            <ul class="list">
-              <li>Aspiration complète habitacle.</li>
-              <li>Nettoyage plastiques et tableau de bord.</li>
-              <li>Vitres intérieures et extérieures.</li>
+            <ul class="service-list">
+              <li>Aspiration complète + tapis.</li>
+              <li>Nettoyage plastiques, tableau de bord, aérations.</li>
+              <li>Vitres intérieures/extérieures sans traces.</li>
               <li>Lavage carrosserie et jantes.</li>
             </ul>
           </div>
           <div>
-            <strong>Résultats</strong>
-            <ul class="list">
-              <li>Habitacle désodorisé.</li>
-              <li>Carrosserie brillante.</li>
-              <li>Finitions propres et sans traces.</li>
+            <strong>Idéal pour</strong>
+            <ul class="service-list">
+              <li>Vente ou restitution de véhicule.</li>
+              <li>Entretien mensuel ou saisonnier.</li>
+              <li>Voitures familiales ou professionnelles.</li>
             </ul>
           </div>
           <div>
-            <strong>Options</strong>
-            <ul class="list">
-              <li>Protection plastiques.</li>
-              <li>Shampoing sièges.</li>
-              <li>Traitement hydrophobe.</li>
+            <strong>Résultats typiques</strong>
+            <ul class="service-list">
+              <li>Habitacle rafraîchi et désodorisé.</li>
+              <li>Brillance naturelle sans effet gras.</li>
+              <li>Finitions propres, visuelles et tactiles.</li>
             </ul>
           </div>
-        </div>
-        <div class="card">Conseil pro : pensez à vider le coffre avant notre arrivée.</div>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="devis.html?service=Nettoyage%20voiture" data-cta="Devis voiture">Devis rapide</a>
-        </div>
-      </div>
-
-      <div class="card service-section" id="terrasse">
-        <div class="service-header">
-          <div class="service-icon">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 10h18v10H3V10zm2-6h14v4H5V4zm2 8h10v6H7v-6z" fill="currentColor"/></svg>
+          <div class="service-tip">
+            <strong>Conseil pro</strong>
+            <p>Un petit rangement du coffre permet un nettoyage plus rapide et efficace.</p>
           </div>
-          <h2>Nettoyage terrasse</h2>
         </div>
-        <p>Dalles, murs, mobilier : un extérieur propre et sûr.</p>
-        <div class="grid grid-3">
+      </article>
+
+      <article class="card service-detail-card" id="service-terrasse" data-animate>
+        <div class="service-detail-top">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10h16v10H4V10zm2-5h12v3H6V5zm2 7h8v6H8v-6z" fill="currentColor"/></svg>
+          </div>
+          <div>
+            <h3>Nettoyage terrasse</h3>
+            <p class="service-detail-lead">Redonnez de l’éclat à vos extérieurs avec un nettoyage adapté.</p>
+          </div>
+          <div class="service-detail-cta">
+            <a class="btn btn-primary btn-small" href="devis.html?service=Nettoyage%20terrasse" data-cta="Devis terrasse detail">Demander un devis</a>
+            <p>Devis clair, sans engagement.</p>
+          </div>
+        </div>
+        <div class="service-detail-grid">
           <div>
             <strong>Ce qui est inclus</strong>
-            <ul class="list">
+            <ul class="service-list">
               <li>Nettoyage dalles, margelles et joints.</li>
+              <li>Dégraissage doux des surfaces sensibles.</li>
               <li>Traitement des mousses et salissures.</li>
-              <li>Nettoyage des murs et murets.</li>
               <li>Remise en état du mobilier extérieur.</li>
             </ul>
           </div>
           <div>
-            <strong>Résultats</strong>
-            <ul class="list">
-              <li>Terrasse éclaircie.</li>
-              <li>Surfaces moins glissantes.</li>
-              <li>Extérieurs plus accueillants.</li>
+            <strong>Idéal pour</strong>
+            <ul class="service-list">
+              <li>Terrasses en pierre, carrelage, bois.</li>
+              <li>Zones ombragées qui verdissent vite.</li>
+              <li>Avant une réception ou l’été.</li>
             </ul>
           </div>
           <div>
-            <strong>Options</strong>
-            <ul class="list">
-              <li>Protection anti-mousse.</li>
-              <li>Finition hydrofuge.</li>
-              <li>Évacuation des déchets.</li>
+            <strong>Résultats typiques</strong>
+            <ul class="service-list">
+              <li>Terrasse plus claire et homogène.</li>
+              <li>Surfaces plus sûres, moins glissantes.</li>
+              <li>Espaces extérieurs plus accueillants.</li>
             </ul>
           </div>
-        </div>
-        <div class="card">Conseil pro : un entretien régulier évite l'encrassement et prolonge la durée de vie des matériaux.</div>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="devis.html?service=Nettoyage%20terrasse" data-cta="Devis terrasse">Devis rapide</a>
-        </div>
-      </div>
-
-      <div class="card service-section" id="canape">
-        <div class="service-header">
-          <div class="service-icon">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v6h-2v-6a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v6H4v-6zm3 8h10v2H7v-2z" fill="currentColor"/></svg>
+          <div class="service-tip">
+            <strong>Conseil pro</strong>
+            <p>Un entretien léger tous les 3 à 6 mois évite un encrassement profond.</p>
           </div>
-          <h2>Nettoyage canapé & tissus</h2>
         </div>
-        <p>Détachage, odeurs, rafraîchissement des textiles.</p>
-        <div class="grid grid-3">
+      </article>
+
+      <article class="card service-detail-card" id="service-canape" data-animate>
+        <div class="service-detail-top">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 11a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v5H4v-5zm2 7h12v2H6v-2z" fill="currentColor"/></svg>
+          </div>
+          <div>
+            <h3>Nettoyage canapé & tissus</h3>
+            <p class="service-detail-lead">Traitement doux des fibres pour retrouver fraîcheur et confort.</p>
+          </div>
+          <div class="service-detail-cta">
+            <a class="btn btn-primary btn-small" href="devis.html?service=Nettoyage%20canap%C3%A9%20%26%20tissus" data-cta="Devis canape detail">Demander un devis</a>
+            <p>Adapté aux tissus délicats.</p>
+          </div>
+        </div>
+        <div class="service-detail-grid">
           <div>
             <strong>Ce qui est inclus</strong>
-            <ul class="list">
+            <ul class="service-list">
               <li>Aspiration et dépoussiérage.</li>
-              <li>Traitement des taches courantes.</li>
+              <li>Détachage ciblé sur taches courantes.</li>
               <li>Neutralisation des odeurs.</li>
-              <li>Nettoyage des accoudoirs et coussins.</li>
+              <li>Nettoyage accoudoirs et coussins.</li>
             </ul>
           </div>
           <div>
-            <strong>Résultats</strong>
-            <ul class="list">
-              <li>Tissus ravivés.</li>
-              <li>Odeurs réduites.</li>
-              <li>Texture plus douce.</li>
+            <strong>Idéal pour</strong>
+            <ul class="service-list">
+              <li>Canapés en tissu ou microfibre.</li>
+              <li>Traces de boissons, poils, odeurs.</li>
+              <li>Entretien annuel du mobilier.</li>
             </ul>
           </div>
           <div>
-            <strong>Options</strong>
-            <ul class="list">
-              <li>Protection anti-taches.</li>
-              <li>Traitement allergènes.</li>
-              <li>Nettoyage rideaux et tapis.</li>
+            <strong>Résultats typiques</strong>
+            <ul class="service-list">
+              <li>Textiles ravivés, aspect plus uniforme.</li>
+              <li>Odeurs atténuées.</li>
+              <li>Toucher plus doux.</li>
             </ul>
           </div>
+          <div class="service-tip">
+            <strong>Conseil pro</strong>
+            <p>Signalez les taches spécifiques : nous adaptons les produits aux fibres.</p>
+          </div>
         </div>
-        <div class="card">Conseil pro : testez toujours un produit sur une zone discrète.</div>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="devis.html?service=Nettoyage%20canap%C3%A9%20%26%20tissus" data-cta="Devis canape">Devis rapide</a>
-        </div>
-      </div>
+      </article>
 
-      <div class="card service-section" id="jardin">
-        <div class="service-header">
+      <article class="card service-detail-card" id="service-jardin" data-animate>
+        <div class="service-detail-top">
           <div class="service-icon">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3c3 2 4 4 4 6a4 4 0 1 1-8 0c0-2 1-4 4-6zm-8 14h16v4H4v-4z" fill="currentColor"/></svg>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4c3 2.3 4.5 4.6 4.5 6.6a4.5 4.5 0 1 1-9 0c0-2 1.5-4.3 4.5-6.6zM4 18h16v3H4v-3z" fill="currentColor"/></svg>
           </div>
-          <h2>Travaux de jardinage</h2>
+          <div>
+            <h3>Jardinage</h3>
+            <p class="service-detail-lead">Un entretien régulier pour un jardin net toute l’année.</p>
+          </div>
+          <div class="service-detail-cta">
+            <a class="btn btn-primary btn-small" href="devis.html?service=Jardinage" data-cta="Devis jardin detail">Demander un devis</a>
+            <p>Interventions ponctuelles ou récurrentes.</p>
+          </div>
         </div>
-        <p>Tonte, taille, désherbage : un extérieur soigné.</p>
-        <div class="grid grid-3">
+        <div class="service-detail-grid">
           <div>
             <strong>Ce qui est inclus</strong>
-            <ul class="list">
-              <li>Tonte et finition des bordures.</li>
+            <ul class="service-list">
+              <li>Tonte et finitions des bordures.</li>
               <li>Taille de haies et arbustes.</li>
               <li>Désherbage manuel ou mécanique.</li>
               <li>Ramassage des feuilles.</li>
             </ul>
           </div>
           <div>
-            <strong>Résultats</strong>
-            <ul class="list">
-              <li>Jardin plus net.</li>
-              <li>Allées dégagées.</li>
-              <li>Meilleure santé des végétaux.</li>
+            <strong>Idéal pour</strong>
+            <ul class="service-list">
+              <li>Entretien saisonnier des jardins.</li>
+              <li>Remise en état avant location/vente.</li>
+              <li>Besoin de régularité sans contrainte.</li>
             </ul>
           </div>
           <div>
-            <strong>Options</strong>
-            <ul class="list">
-              <li>Évacuation des déchets verts.</li>
-              <li>Plantations saisonnières.</li>
-              <li>Paillage.</li>
+            <strong>Résultats typiques</strong>
+            <ul class="service-list">
+              <li>Jardin plus net et structuré.</li>
+              <li>Allées dégagées et lisibles.</li>
+              <li>Végétaux mieux aérés.</li>
             </ul>
           </div>
+          <div class="service-tip">
+            <strong>Conseil pro</strong>
+            <p>Deux passages par saison suffisent souvent à garder un jardin propre.</p>
+          </div>
         </div>
-        <div class="card">Conseil pro : planifiez deux passages par saison pour garder un jardin toujours présentable.</div>
+      </article>
+
+      <div class="services-cta" data-animate>
+        <div>
+          <h3>Besoin d’un devis rapide ?</h3>
+          <p>Nous vous répondons rapidement avec une proposition claire.</p>
+        </div>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="devis.html?service=Jardinage" data-cta="Devis jardin">Devis rapide</a>
+          <a class="btn btn-primary" href="devis.html" data-cta="Devis services bas">Demander un devis</a>
+          <a class="btn btn-secondary" href="tel:+33675424908" data-cta="Appel services bas">Appeler</a>
+          <a class="btn btn-ghost" href="sms:+33675424908" data-cta="SMS services bas">SMS</a>
         </div>
       </div>
     </div>
@@ -233,10 +372,15 @@
   <section class="section">
     <div class="container" data-animate>
       <h2 class="section-title">Quel service choisir ?</h2>
+      <p class="section-subtitle text-narrow">En quelques secondes, orientez-vous vers le service le plus adapté.</p>
       <div class="grid grid-3 compare-grid" style="margin-top: 24px;">
-        <div class="card">Taches, odeurs, tissus : choisissez le nettoyage canapé & tissus.</div>
-        <div class="card">Extérieurs ternes : le nettoyage terrasse redonne de l'éclat.</div>
-        <div class="card">Entretien régulier : le jardinage assure un extérieur net.</div>
+        <div class="card">Taches, odeurs ou tissus ternes : privilégiez le nettoyage canapé & tissus.</div>
+        <div class="card">Dalles ternies ou mousse : le nettoyage terrasse redonne de l’éclat.</div>
+        <div class="card">Entretien régulier : le jardinage assure un extérieur net et soigné.</div>
+      </div>
+      <div class="hero-actions" style="margin-top: 20px;">
+        <a class="btn btn-primary" href="devis.html" data-cta="Devis services choix">Demander un devis</a>
+        <a class="btn btn-ghost" href="tel:+33675424908" data-cta="Appel services choix">Appeler</a>
       </div>
     </div>
   </section>
