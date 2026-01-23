@@ -1,0 +1,81 @@
+.hero-card {
+  position: relative;
+  z-index: 1;
+}
+
+.services-grid .card h3 {
+  margin-top: 0;
+}
+
+.service-card {
+  border: 1px solid rgba(35, 49, 142, 0.12);
+}
+
+.service-card:hover {
+  border-color: rgba(91, 115, 240, 0.6);
+}
+
+.service-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 14px;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(120deg, rgba(35, 49, 142, 0.12), rgba(91, 115, 240, 0.25));
+  color: var(--night);
+  margin-bottom: 12px;
+}
+
+.service-icon svg {
+  width: 22px;
+  height: 22px;
+}
+
+.service-benefit {
+  font-size: 13px;
+  color: #64748B;
+  margin-bottom: 16px;
+}
+
+.before-after {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+
+.placeholder {
+  height: 140px;
+  border-radius: 16px;
+  background: var(--ice);
+  display: grid;
+  place-items: center;
+  font-size: 13px;
+  color: var(--night);
+  font-weight: 600;
+}
+
+.testimonials .card {
+  font-size: 14px;
+}
+
+.stepper {
+  display: grid;
+  gap: 16px;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.step span {
+  width: 36px;
+  height: 36px;
+  border-radius: 12px;
+  background: linear-gradient(120deg, var(--night), var(--azure));
+  color: white;
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+}
