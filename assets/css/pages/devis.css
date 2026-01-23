@@ -1,0 +1,71 @@
+.summary-box {
+  background: var(--ice);
+  padding: 16px;
+  border-radius: 16px;
+  font-size: 14px;
+  color: #475569;
+}
+
+.confirmation {
+  display: none;
+  background: var(--ice);
+  padding: 14px 16px;
+  border-radius: 12px;
+  font-size: 14px;
+}
+
+.confirmation.show {
+  display: block;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: #475569;
+}
+
+.progress {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #fff;
+  border: 1px solid var(--ice);
+  border-radius: 12px;
+  padding: 10px 12px;
+}
+
+.progress-bar {
+  flex: 1;
+  height: 6px;
+  border-radius: 999px;
+  background: linear-gradient(120deg, rgba(35, 49, 142, 0.2), rgba(91, 115, 240, 0.4));
+  position: relative;
+  overflow: hidden;
+}
+
+.progress-bar::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: 50%;
+  background: linear-gradient(120deg, var(--night), var(--azure));
+  transition: width 0.3s ease;
+}
+
+.progress-bar.complete::after {
+  width: 100%;
+}
+
+.sms-quick h4 {
+  margin: 0 0 8px;
+}
+
+.sms-template {
+  background: var(--fog);
+  border-radius: 12px;
+  padding: 10px 12px;
+  font-size: 13px;
+  color: #475569;
+}
