@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LES PORTES D'AZUR | Nettoyage & Jardinage</title>
+  <meta name="description" content="Entreprise locale de nettoyage et jardinage. Devis gratuit, matériel fourni, équipe ponctuelle. Appel/SMS immédiat pour un devis." />
+  <meta property="og:title" content="LES PORTES D'AZUR | Nettoyage & Jardinage" />
+  <meta property="og:description" content="Nettoyage voiture, terrasse, canapé & tissus, jardinage. Devis gratuit et réponse rapide." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta property="og:image" content="assets/img/og-placeholder.svg" />
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="assets/css/pages/home.css" />
+</head>
+<body>
+  <div class="loader" aria-hidden="true"><span></span></div>
+  <div class="page-overlay" aria-hidden="true"></div>
+  <header>
+    <div class="container nav">
+      <a class="logo" href="index.html">
+        <div class="logo-mark">LP</div>
+        <div>
+          <div style="font-weight: 700; color: var(--night);">LES PORTES D'AZUR</div>
+          <div style="font-size: 12px; color: #64748B;">Nettoyage • Jardinage</div>
+        </div>
+      </a>
+      <nav class="nav-links">
+        <a href="index.html">Accueil</a>
+        <a href="services.html">Services</a>
+        <a href="realisations.html">Réalisations</a>
+        <a href="devis.html">Devis</a>
+        <a href="contact.html">Contact</a>
+        <a href="faq.html">FAQ</a>
+      </nav>
+      <div class="nav-actions">
+        <a class="btn btn-secondary" href="tel:+33675424908" data-cta="Appel header">06 75 42 49 08</a>
+        <a class="btn btn-primary" href="devis.html" data-cta="Devis header">Demander un devis</a>
+        <button class="menu-toggle" type="button">Menu</button>
+      </div>
+    </div>
+    <div class="mobile-menu">
+      <a href="index.html">Accueil</a>
+      <a href="services.html">Services</a>
+      <a href="realisations.html">Réalisations</a>
+      <a href="devis.html">Devis</a>
+      <a href="contact.html">Contact</a>
+      <a href="faq.html">FAQ</a>
+    </div>
+    <div class="menu-backdrop" aria-hidden="true"></div>
+  </header>
+
+  <section class="hero section home-hero">
+    <div class="hero-blobs" aria-hidden="true">
+      <span class="blob blob-one"></span>
+      <span class="blob blob-two"></span>
+      <span class="blob blob-three"></span>
+    </div>
+    <div class="container hero-grid">
+      <div class="hero-copy" data-animate>
+        <span class="badge">Entreprise locale • Matériel fourni</span>
+        <h1>Nettoyage & jardinage premium, pour un intérieur impeccable et des extérieurs qui respirent.</h1>
+        <p class="hero-subtitle">
+          LES PORTES D'AZUR intervient chez les particuliers avec sérieux, ponctualité et un vrai sens du détail.
+          Devis gratuit, réponse rapide par téléphone ou SMS.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="devis.html" data-cta="Devis hero">Demander un devis</a>
+          <a class="btn btn-secondary" href="tel:+33675424908" data-cta="Appel hero">Appeler / SMS</a>
+        </div>
+        <div class="hero-badges">
+          <span class="badge">Devis gratuit</span>
+          <span class="badge">Matériel fourni</span>
+          <span class="badge">Ponctuels</span>
+          <span class="badge">Travail soigné</span>
+        </div>
+        <div class="hero-mini">
+          <div class="mini-card">
+            <strong>Réponse rapide</strong>
+            <span>Sous 24h ouvrées</span>
+          </div>
+          <div class="mini-card">
+            <strong>Chez les particuliers</strong>
+            <span>Interventions locales</span>
+          </div>
+        </div>
+      </div>
+      <div class="card hero-card" data-animate>
+        <h2 style="margin-top: 0; color: var(--night);">Devis rapide</h2>
+        <p style="color: #475569;">Indiquez votre besoin, nous vous rappelons rapidement avec une proposition claire.</p>
+        <form class="form-grid hero-form" id="hero-quick-form" style="margin-top: 16px;">
+          <div>
+            <label for="hero-service">Service souhaité</label>
+            <div class="custom-select" data-select>
+              <select id="hero-service" class="native-select">
+                <option>Nettoyage canapé / fauteuil</option>
+                <option>Nettoyage tapis / moquette</option>
+                <option>Vitres / baies vitrées</option>
+                <option>Entretien jardin</option>
+                <option>Fin de chantier</option>
+                <option>Grand ménage</option>
+                <option>Débarras / encombrants</option>
+                <option>Nettoyage Airbnb / location</option>
+              </select>
+              <button class="custom-select-button" type="button" role="combobox" aria-expanded="false" aria-controls="hero-service-list">
+                <span class="custom-select-label">Nettoyage canapé / fauteuil</span>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="currentColor"/></svg>
+              </button>
+              <ul class="custom-select-list" id="hero-service-list" role="listbox">
+                <li class="custom-select-option" role="option" aria-selected="true" data-value="Nettoyage canapé / fauteuil">Nettoyage canapé / fauteuil</li>
+                <li class="custom-select-option" role="option" aria-selected="false" data-value="Nettoyage tapis / moquette">Nettoyage tapis / moquette</li>
+                <li class="custom-select-option" role="option" aria-selected="false" data-value="Vitres / baies vitrées">Vitres / baies vitrées</li>
+                <li class="custom-select-option" role="option" aria-selected="false" data-value="Entretien jardin">Entretien jardin</li>
+                <li class="custom-select-option" role="option" aria-selected="false" data-value="Fin de chantier">Fin de chantier</li>
+                <li class="custom-select-option" role="option" aria-selected="false" data-value="Grand ménage">Grand ménage</li>
+                <li class="custom-select-option" role="option" aria-selected="false" data-value="Débarras / encombrants">Débarras / encombrants</li>
+                <li class="custom-select-option" role="option" aria-selected="false" data-value="Nettoyage Airbnb / location">Nettoyage Airbnb / location</li>
+              </ul>
+            </div>
+          </div>
+          <div>
+            <label for="hero-city">Ville / secteur</label>
+            <input id="hero-city" placeholder="Votre ville" />
+          </div>
+          <div>
+            <label for="hero-contact">Téléphone ou email</label>
+            <input id="hero-contact" placeholder="06 00 00 00 00" />
+          </div>
+          <button class="btn btn-primary" type="submit" data-cta="Devis hero form">Envoyer la demande</button>
+          <div id="hero-confirm" class="confirmation"></div>
+          <div class="hero-form-actions">
+            <a class="btn btn-secondary" id="hero-sms" href="sms:+33675424908">SMS prérempli</a>
+            <a class="btn btn-ghost" id="hero-mail" href="mailto:contact@lesportesdazur.fr">Email rapide</a>
+          </div>
+          <p style="font-size: 12px; color: #94A3B8;">Réponse rapide • Devis gratuit • Respect des lieux</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider" aria-hidden="true">
+    <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+      <path d="M0,64 C240,120 480,120 720,64 C960,8 1200,8 1440,64 L1440,120 L0,120 Z" fill="white"></path>
+    </svg>
+  </div>
+
+  <section class="section quick-summary">
+    <div class="container">
+      <div class="section-header text-narrow" data-animate>
+        <h2 class="section-title">En 10 secondes : ce qu'on fait</h2>
+        <p class="section-subtitle">Des interventions rapides, propres et efficaces pour vous simplifier la vie.</p>
+      </div>
+      <div class="grid grid-3">
+        <div class="card summary-card" data-animate>
+          <h3>Nettoyage</h3>
+          <p>Intérieur, textiles, vitres ou fin de chantier : résultat visible dès la première visite.</p>
+        </div>
+        <div class="card summary-card" data-animate>
+          <h3>Jardinage</h3>
+          <p>Tonte, taille, désherbage : un extérieur net et entretenu toute l'année.</p>
+        </div>
+        <div class="card summary-card" data-animate>
+          <h3>Interventions rapides</h3>
+          <p>Devis gratuit, réponse rapide et matériel fourni pour une prestation sans stress.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section-header text-narrow" data-animate>
+        <h2 class="section-title">Nos services</h2>
+        <p class="section-subtitle">Une offre complète, claire et orientée résultat pour votre intérieur et vos extérieurs.</p>
+      </div>
+      <div class="services-grid home-services-grid">
+        <div class="card service-card" data-animate>
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v6h-2v-6a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v6H4v-6zm3 8h10v2H7v-2z" fill="currentColor"/></svg>
+          </div>
+          <h3>Canapé / fauteuil</h3>
+          <p>Textiles rafraîchis, odeurs réduites, confort retrouvé.</p>
+          <div class="service-cta">
+            <a class="btn btn-primary" href="devis.html?service=Nettoyage%20canap%C3%A9%20%2F%20fauteuil">Devis</a>
+            <a class="btn btn-ghost" href="services.html#service-canape">En savoir plus</a>
+          </div>
+        </div>
+        <div class="card service-card" data-animate>
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4h12v4H6V4zm0 6h12v10H6V10zm-2 0h2v10H4V10zm14 0h2v10h-2V10z" fill="currentColor"/></svg>
+          </div>
+          <h3>Tapis / moquette</h3>
+          <p>Fibres décrassées et couleurs ravivées sans agressivité.</p>
+          <div class="service-cta">
+            <a class="btn btn-primary" href="devis.html?service=Nettoyage%20tapis%20%2F%20moquette">Devis</a>
+            <a class="btn btn-ghost" href="services.html#service-tapis">En savoir plus</a>
+          </div>
+        </div>
+        <div class="card service-card" data-animate>
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v14H4V5zm2 2v10h12V7H6zm1 11h10v2H7v-2z" fill="currentColor"/></svg>
+          </div>
+          <h3>Vitres / baies vitrées</h3>
+          <p>Transparence nette et luminosité accrue.</p>
+          <div class="service-cta">
+            <a class="btn btn-primary" href="devis.html?service=Nettoyage%20vitres%20%2F%20baies%20vitr%C3%A9es">Devis</a>
+            <a class="btn btn-ghost" href="services.html#service-vitres">En savoir plus</a>
+          </div>
+        </div>
+        <div class="card service-card" data-animate>
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3c3 2 4 4 4 6a4 4 0 1 1-8 0c0-2 1-4 4-6zm-8 14h16v4H4v-4z" fill="currentColor"/></svg>
+          </div>
+          <h3>Entretien jardin</h3>
+          <p>Extérieurs nets, végétation structurée, entretien régulier.</p>
+          <div class="service-cta">
+            <a class="btn btn-primary" href="devis.html?service=Entretien%20jardin">Devis</a>
+            <a class="btn btn-ghost" href="services.html#service-jardin">En savoir plus</a>
+          </div>
+        </div>
+        <div class="card service-card" data-animate>
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16v4H4V6zm0 6h16v6H4v-6zm2 2v2h12v-2H6z" fill="currentColor"/></svg>
+          </div>
+          <h3>Fin de chantier</h3>
+          <p>Nettoyage complet après travaux pour un espace prêt à vivre.</p>
+          <div class="service-cta">
+            <a class="btn btn-primary" href="devis.html?service=Nettoyage%20fin%20de%20chantier">Devis</a>
+            <a class="btn btn-ghost" href="services.html#service-chantier">En savoir plus</a>
+          </div>
+        </div>
+        <div class="card service-card" data-animate>
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16v4H4V4zm0 6h16v10H4V10zm3 3v2h4v-2H7zm6 0v2h4v-2h-4z" fill="currentColor"/></svg>
+          </div>
+          <h3>Grand ménage</h3>
+          <p>Cuisine, salle de bain, sols : fraîcheur immédiate.</p>
+          <div class="service-cta">
+            <a class="btn btn-primary" href="devis.html?service=Grand%20m%C3%A9nage">Devis</a>
+            <a class="btn btn-ghost" href="services.html#service-menage">En savoir plus</a>
+          </div>
+        </div>
+        <div class="card service-card" data-animate>
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7h18v10H3V7zm2 2v6h14V9H5zm-2 8h18v2H3v-2z" fill="currentColor"/></svg>
+          </div>
+          <h3>Débarras / encombrants</h3>
+          <p>Espaces libérés rapidement, intervention organisée.</p>
+          <div class="service-cta">
+            <a class="btn btn-primary" href="devis.html?service=D%C3%A9barras%20%2F%20encombrants">Devis</a>
+            <a class="btn btn-ghost" href="services.html#service-debarras">En savoir plus</a>
+          </div>
+        </div>
+        <div class="card service-card" data-animate>
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16v12H4V6zm2 2v8h12V8H6zm5 10h2v2h-2v-2z" fill="currentColor"/></svg>
+          </div>
+          <h3>Nettoyage Airbnb</h3>
+          <p>Logement impeccable entre deux séjours.</p>
+          <div class="service-cta">
+            <a class="btn btn-primary" href="devis.html?service=Nettoyage%20Airbnb%20%2F%20location">Devis</a>
+            <a class="btn btn-ghost" href="services.html#service-airbnb">En savoir plus</a>
+          </div>
+        </div>
+      </div>
+      <div class="hero-actions services-more" data-animate>
+        <a class="btn btn-outline" href="services.html">Voir tous nos services</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section pattern-section">
+    <div class="container">
+      <div class="section-header text-narrow" data-animate>
+        <h2 class="section-title">Pourquoi nous choisir ?</h2>
+        <p class="section-subtitle">Ponctualité, sérieux et résultats visibles : une entreprise locale sur laquelle compter.</p>
+      </div>
+      <div class="grid grid-5">
+        <div class="card why-card" data-animate>
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 11H7v-2h4V6h2v7z" fill="currentColor"/></svg>
+          </div>
+          <strong>Ponctuels & sérieux</strong>
+          <p>Respect des horaires et des engagements.</p>
+        </div>
+        <div class="card why-card" data-animate>
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l4 4L19 6l-1.4-1.4L9 13.2 6.4 10.6 5 12z" fill="currentColor"/></svg>
+          </div>
+          <strong>Travail soigné</strong>
+          <p>Finitions propres et méthodes adaptées.</p>
+        </div>
+        <div class="card why-card" data-animate>
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16v10H4V7zm2 2v6h12V9H6z" fill="currentColor"/></svg>
+          </div>
+          <strong>Matériel fourni</strong>
+          <p>Tout est prévu pour une intervention efficace.</p>
+        </div>
+        <div class="card why-card" data-animate>
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l9 4v6c0 5-4 7-9 8-5-1-9-3-9-8V7l9-4z" fill="currentColor"/></svg>
+          </div>
+          <strong>Devis rapide</strong>
+          <p>Réponse claire par téléphone ou SMS.</p>
+        </div>
+        <div class="card why-card" data-animate>
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h6v6H4v-6zm10-6h6v6h-6V6zM4 6h6v4H4V6zm10 6h6v6h-6v-6z" fill="currentColor"/></svg>
+          </div>
+          <strong>Résultats visibles</strong>
+          <p>Des espaces nets dès la première visite.</p>
+        </div>
+      </div>
+      <p class="section-note" data-animate>Entreprise locale, proche de vous et à l'écoute de vos besoins.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container grid grid-2" data-animate>
+      <div class="card">
+        <h2 style="margin-top: 0;">Qui sommes-nous ?</h2>
+        <p style="color: #475569;">
+          Bonjour, nous sommes deux auto-entrepreneurs et avons fondé Les Portes d'Azur, une entreprise locale de nettoyage.
+          Nous intervenons chez les particuliers avec sérieux, ponctualité et un travail soigné, pour redonner propreté et éclat à vos espaces.
+          Nous respectons vos lieux, nous fournissons le matériel et nous vous donnons un devis rapide.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="tel:+33675424908" data-cta="Appel qui sommes nous">Appeler</a>
+          <a class="btn btn-secondary" href="devis.html" data-cta="Devis qui sommes nous">Demander un devis</a>
+        </div>
+      </div>
+      <div class="card">
+        <h3 style="margin-top: 0;">Étudiants disponibles — équipe flexible</h3>
+        <p style="color: #475569;">Disponibilités étendues, matériel fourni et interventions soignées.</p>
+        <ul class="list">
+          <li>Respect total des lieux.</li>
+          <li>Planning souple selon vos besoins.</li>
+          <li>Réponse rapide par téléphone ou SMS.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-header text-narrow" data-animate>
+        <h2 class="section-title">Comment ça marche</h2>
+        <p class="section-subtitle">Un parcours simple, rapide et rassurant.</p>
+      </div>
+      <div class="grid grid-3 stepper">
+        <div class="card" data-animate>
+          <div class="step"><span>1</span><strong>Contact rapide</strong></div>
+          <p>Appel, SMS ou formulaire. Nous confirmons votre besoin et votre secteur.</p>
+        </div>
+        <div class="card" data-animate>
+          <div class="step"><span>2</span><strong>Intervention soignée</strong></div>
+          <p>Nous arrivons équipés, respectons vos espaces et travaillons proprement.</p>
+        </div>
+        <div class="card" data-animate>
+          <div class="step"><span>3</span><strong>Résultat visible</strong></div>
+          <p>Vous validez le résultat et recevez des conseils pour entretenir.</p>
+        </div>
+      </div>
+      <div class="hero-actions stepper-cta" data-animate>
+        <a class="btn btn-primary" href="devis.html" data-cta="Devis stepper">Demander un devis</a>
+        <a class="btn btn-secondary" href="tel:+33675424908" data-cta="Appel stepper">Appeler</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="realisations" style="background: white;">
+    <div class="container" data-animate>
+      <h2 class="section-title">Avant / Après</h2>
+      <p class="section-subtitle">Quelques exemples de résultats (placeholders).</p>
+      <div class="before-after" style="margin-top: 24px;">
+        <div class="card"><div class="placeholder">Avant / Après 1</div></div>
+        <div class="card"><div class="placeholder">Avant / Après 2</div></div>
+        <div class="card"><div class="placeholder">Avant / Après 3</div></div>
+        <div class="card"><div class="placeholder">Avant / Après 4</div></div>
+        <div class="card"><div class="placeholder">Avant / Après 5</div></div>
+        <div class="card"><div class="placeholder">Avant / Après 6</div></div>
+      </div>
+      <div class="hero-actions" style="margin-top: 24px;">
+        <a class="btn btn-outline" href="realisations.html" data-cta="Realisations home">Voir toutes les réalisations</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container testimonials" data-animate>
+      <h2 class="section-title">Avis clients</h2>
+      <p class="section-subtitle">Avis (exemples) pour projection.</p>
+      <div class="grid grid-3" style="margin-top: 24px;">
+        <div class="card">« Service rapide, terrasse impeccable. » — Élodie R.</div>
+        <div class="card">« Très bon nettoyage voiture, intérieur comme neuf. » — Marc D.</div>
+        <div class="card">« Canapé rafraîchi, odeurs supprimées. » — Sabrina L.</div>
+        <div class="card">« Jardin nickel et bien taillé. » — Hugo P.</div>
+        <div class="card">« Ponctuels, matériel fourni, résultat visible tout de suite. » — Nathalie C.</div>
+        <div class="card">« Devis clair, équipe agréable, je recommande. » — Julien M.</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background: white;">
+    <div class="container" data-animate>
+      <div class="cta-block">
+        <h2>Prêt à retrouver un espace propre et net ?</h2>
+        <p>Appelez-nous au 06 75 42 49 08 ou envoyez un SMS pour un devis gratuit.</p>
+        <div class="hero-actions" style="justify-content: center;">
+          <a class="btn btn-primary" href="tel:+33675424908" data-cta="Appel CTA final">Appeler</a>
+          <a class="btn btn-secondary" href="sms:+33675424908?&body=Bonjour%2C%20je%20souhaite%20un%20devis%20pour%20%5Bservice%5D%20%C3%A0%20%5Bville%5D." data-cta="SMS CTA final">Envoyer un SMS</a>
+        </div>
+        <p style="font-size: 12px; opacity: 0.8;">Réponse rapide • Matériel fourni • Équipe flexible</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <strong>LES PORTES D'AZUR</strong>
+        <p>Nettoyage • Jardinage</p>
+        <p>Entreprise locale, équipe flexible, matériel fourni, interventions soignées.</p>
+        <p><a href="tel:+33675424908">06 75 42 49 08</a></p>
+        <p><a href="sms:+33675424908">Envoyer un SMS</a></p>
+      </div>
+      <div>
+        <strong>Navigation</strong>
+        <p><a href="services.html">Services</a></p>
+        <p><a href="realisations.html">Réalisations</a></p>
+        <p><a href="devis.html">Devis</a></p>
+        <p><a href="contact.html">Contact</a></p>
+        <p><a href="faq.html">FAQ</a></p>
+      </div>
+      <div>
+        <strong>Légal</strong>
+        <p><a href="mentions-legales.html">Mentions légales</a></p>
+        <p><a href="politique-confidentialite.html">Politique de confidentialité</a></p>
+        <p class="legal">Aucune adresse précise n'est publiée. Nous intervenons autour de votre secteur.</p>
+      </div>
+    </div>
+    <div class="legal" style="text-align: center;">© 2024 LES PORTES D'AZUR. Tous droits réservés.</div>
+  </footer>
+
+  <div class="floating-cta">
+    <a class="btn btn-icon" href="tel:+33675424908" data-cta="Floating Appel">📞 Appeler</a>
+    <a class="btn btn-icon" href="sms:+33675424908" data-cta="Floating SMS">💬 SMS</a>
+  </div>
+  <div class="sticky-mobile">
+    <a class="btn btn-primary" href="tel:+33675424908" data-cta="Sticky Appel">Appeler</a>
+    <a class="btn btn-secondary" href="sms:+33675424908" data-cta="Sticky SMS">SMS</a>
+  </div>
+  <button class="scroll-top btn btn-icon" type="button" aria-label="Revenir en haut">↑</button>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/animations.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const form = document.getElementById("hero-quick-form");
+      const confirm = document.getElementById("hero-confirm");
+      const smsLink = document.getElementById("hero-sms");
+      const mailLink = document.getElementById("hero-mail");
+      const actions = document.querySelector(".hero-form-actions");
+
+      if (form && confirm && smsLink && mailLink && actions) {
+        form.addEventListener("submit", (event) => {
+          event.preventDefault();
+          const service = document.getElementById("hero-service")?.value || "service";
+          const city = document.getElementById("hero-city")?.value || "votre ville";
+          const contact = document.getElementById("hero-contact")?.value || "vos coordonnées";
+          const message = `Bonjour, je souhaite un devis pour ${service} à ${city}. Contact : ${contact}.`;
+          const encoded = encodeURIComponent(message);
+          smsLink.href = `sms:+33675424908?&body=${encoded}`;
+          mailLink.href = `mailto:contact@lesportesdazur.fr?subject=Demande%20de%20devis&body=${encoded}`;
+          confirm.textContent = "Merci ! Nous vous recontactons rapidement. Vous pouvez aussi envoyer un SMS ou un email prérempli.";
+          confirm.classList.add("show");
+          actions.classList.add("show");
+        });
+      }
+
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape") {
+          const header = document.querySelector("header");
+          if (header?.classList.contains("nav-open")) {
+            document.querySelector(".menu-toggle")?.click();
+          }
+        }
+      });
+    });
+  </script>
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HomeAndConstructionBusiness",
+      "name": "LES PORTES D'AZUR",
+      "description": "Nettoyage et jardinage pour particuliers et petits pros.",
+      "telephone": "+33 6 75 42 49 08",
+      "areaServed": "Autour de votre secteur",
+      "serviceType": ["Nettoyage", "Jardinage"]
+    }
+  </script>
+</body>
+</html>
